@@ -8,8 +8,7 @@ import style from './components/themes/topicos.module.scss'
 
 function App() {
   const conteudo:Array<Temas> = [];
-  conteudo.push(new Temas("Olá, sou o <br><span>Ariel Rocha de Moraes</span>",style.capa, logoImg, "Estudante de Engenharia de Computação <br> IFCE - Campus Fortaleza"));
-
+  conteudo.push(new Temas("Olá, sou <br><span>Ariel Rocha de Moraes</span>",style.capa, logoImg, "Estudante de Engenharia de Computação <br> IFCE - Campus Fortaleza"));
   console.log(conteudo);
   
   return (
