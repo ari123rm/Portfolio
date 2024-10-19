@@ -1,4 +1,4 @@
-class Img{
+export class Img{
     url:string;
     alt:string;
     constructor(url:string,alt:string){
@@ -6,7 +6,7 @@ class Img{
         this.alt = alt;
     }
 }
-class Item{
+export class Item{
     tema : string;
     texto: string;
     imagem:Img;
@@ -17,7 +17,7 @@ class Item{
     }
     
 }
-class Temas{
+export class Temas{
     titulo:string;
     imagem?:Img;
 
@@ -32,5 +32,3 @@ class Temas{
         this.lista = lista;
     }
 }
-
-export {Temas,Item,Img};
