@@ -9,7 +9,7 @@ const Topico:React.FC<Temas> = ({titulo,style,imagem,subtitulo,texto,lista})  =>
             <div>
                 <h1>{Parser(titulo)}</h1>
                 {subtitulo!=undefined ? (
-                    <h2>{subtitulo}</h2>
+                    <h2>{Parser(subtitulo)}</h2>
                     ):(<></>)}
             </div>
             
@@ -18,7 +18,7 @@ const Topico:React.FC<Temas> = ({titulo,style,imagem,subtitulo,texto,lista})  =>
             ):(
                 <></>
             )}
-            {texto != undefined ? (<p>{texto}</p>):(<></>)}
+            {texto != undefined ? (<p>{Parser(texto)}</p>):(<></>)}
             { (lista != undefined) ? (
                 <ul>
                     <li>LISTA EXISTE</li>

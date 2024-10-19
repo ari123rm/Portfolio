@@ -8,7 +8,7 @@ import capaStyle from './components/themes/capa.module.scss'
 
 function App() {
   const conteudo:Array<Temas> = [];
-  conteudo.push(new Temas("Olá, sou o <span>Ariel Rocha de Moraes</span>",capaStyle.capa, logoImg, "Engenharia de Computação do IFCE - Campus Fortaleza"));
+  conteudo.push(new Temas("Olá, sou o <br><span>Ariel Rocha de Moraes</span>",capaStyle.capa, logoImg, "Estudante de Engenharia de Computação <br> IFCE - Campus Fortaleza"));
 
   console.log(conteudo);
   

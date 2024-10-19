@@ -4,7 +4,22 @@
     align-items: center;
     justify-content: space-around;
     div{
-
+        display: grid;
+        justify-items: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        h1{
+            font-size: 65px;
+            width: max-content;
+            span{
+                text-decoration: underline;
+            }
+        }
+        h2{
+            margin-top: 10px;
+            font-size: 30px;
+            width: max-content;
+            text-align: center;
+        }
     }
     img{
         filter: grayscale(60%);
