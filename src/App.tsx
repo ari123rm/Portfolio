@@ -2,8 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Topico from './components/Topico';
-import {Temas} from './components/classes';
-import { logoImg } from './components/imagens';
+import {Temas} from './components/types/classes';
+import { logoImg } from './components/types/imagens';
 
 function App() {
   const conteudo:Array<Temas> = [];

@@ -1,6 +1,6 @@
 import { ReactElement,useState } from "react";
 
-import {Temas} from "./classes";
+import {Temas} from "./types/classes";
 
 
 const Topico:React.FC<Temas> = ({titulo,imagem,subtitulo,texto,lista})  => {
