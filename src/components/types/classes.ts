@@ -19,13 +19,14 @@ export class Item{
 }
 export class Temas{
     titulo:string;
+    style:string;
     imagem?:Img;
-
     subtitulo?:string;
     texto?:string;
     lista?:Array<Item>;
-    constructor(titulo:string,imagem:Img,subtitulo?:string,texto?:string,lista?:Array<Item>){
-        this.titulo = titulo
+    constructor(titulo:string,style:string,imagem?:Img,subtitulo?:string,texto?:string,lista?:Array<Item>){
+        this.titulo = titulo;
+        this.style = "topicos "+style;
         this.imagem = imagem;
         this.subtitulo = subtitulo;
         this.texto = texto;

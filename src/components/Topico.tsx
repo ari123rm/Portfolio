@@ -3,9 +3,9 @@ import { ReactElement,useState } from "react";
 import {Temas} from "./types/classes";
 
 
-const Topico:React.FC<Temas> = ({titulo,imagem,subtitulo,texto,lista})  => {
+const Topico:React.FC<Temas> = ({titulo,style,imagem,subtitulo,texto,lista})  => {
     return (
-        <div>
+        <div className={style}>
             <h1>{titulo}</h1>
             {subtitulo!=undefined ? (
                 <h2>{subtitulo}</h2>
