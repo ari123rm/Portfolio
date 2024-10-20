@@ -1,3 +1,4 @@
+
 .capa{
     background-color: black;
     background: rgb(39,39,40);
@@ -32,16 +33,63 @@
         animation: slidein ease-in-out;
         animation-duration: 2s;
         overflow: hidden;
-        @keyframes slidein {
-            from {
-              transform: translateX(100%) ;
-            }
-            to {
-              transform: translateX(0);
-            }
+        
+    }
+    @keyframes slidein {
+        from {
+          transform: translateX(100%) ;
+        }
+        to {
+          transform: translateX(0);
         }
     }
 }
-.sobreCapa{
+.sobreMim{
     background-color:rgba(39,39,40,1) ;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    div{
+        color: white;
+        order:1;
+        display: grid;
+        h1{
+            font-size: 46px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+        h2{
+            font-size: 30px;
+            max-width:25vw ;
+            text-align: justify;
+        }
+    }
+    img{
+        filter: grayscale(30%);
+        order: 0;
+        height:60vh;
+        border-radius: 100%;
+        animation: slidein2 ease-in-out;
+        animation-duration: 2s;
+        overflow: hidden;
+    }
+    ul{
+        list-style-type: none;
+        order:2;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        li{
+           
+            
+
+        }
+    }
+    @keyframes slidein2 {
+        from {
+          transform: translateX(-100%) ;
+        }
+        to {
+          transform: translateX(0);
+        }
+    }
 }

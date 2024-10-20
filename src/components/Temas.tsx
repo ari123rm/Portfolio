@@ -7,23 +7,23 @@ export default class Temas extends React.Component<temaProps>{
     render(){
         return(
             <div className={"topicos " + this.props.style}>
-            {(this.props.titulo != undefined) ? (
+            {(this.props.titulo) ? (
                 <div>
                 <h1>{Parser(this.props.titulo)}</h1>
-                {this.props.subtitulo!=undefined ? (
+                {this.props.subtitulo ? (
                     <h2>{Parser(this.props.subtitulo)}</h2>
                 ):( <></>  )}
                 </div>
             ):( <></> ) }
             
             
-            {(this.props.imagem != undefined) ? (
+            {(this.props.imagem ) ? (
                 <>{this.props.imagem.render()}</>
             ):(
                 <></>
             )}
-            {this.props.texto != undefined ? (<p>{Parser(this.props.texto)}</p>):(<></>)}
-            { (this.props.lista != undefined) ? (
+            {this.props.texto ? (<p>{Parser(this.props.texto)}</p>):(<></>)}
+            { (this.props.lista) ? (
                 <ul>
                     {this.itens}
                 </ul>
