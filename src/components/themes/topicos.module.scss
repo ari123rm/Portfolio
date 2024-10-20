@@ -47,15 +47,18 @@
 .sobreMim{
     background-color:rgba(39,39,40,1) ;
     align-items: center;
-    justify-content: space-around;
+    justify-items: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display:grid;
+    grid-template-areas: "imagem texto" "tec tec";
     div{
         color: white;
         order:1;
         display: grid;
+        grid-area:texto;
         h1{
             font-size: 46px;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             text-decoration: underline;
         }
         h2{
@@ -72,16 +75,26 @@
         animation: slidein2 ease-in-out;
         animation-duration: 2s;
         overflow: hidden;
+        grid-area:imagem;
     }
     ul{
+        grid-area: tec;
         list-style-type: none;
         order:2;
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display:flex;
+        flex-wrap: wrap;
+        width: 75vw;
+        justify-content: space-around;
+        color: white;
         li{
-           
-            
-
+            font-size: x-large;
+            display: flex;
+            padding: 10px ;
+            align-items: center;
+            min-width:max-content;
+            h3{
+                
+            }
         }
     }
     @keyframes slidein2 {
