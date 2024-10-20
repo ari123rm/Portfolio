@@ -175,12 +175,13 @@ h1{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        
+        padding: 5%;
         li{
             display: grid;
             width: 28%;
+           
             padding: 1%;
-            height: min-content;
+            
             background: rgb(39,39,40);
             background: radial-gradient(circle, rgba(39,39,40,1) 0%, rgba(39,39,40,1));
             border-radius: 10px;
@@ -195,11 +196,12 @@ h1{
                 font-size: 46px;
                 margin-bottom: 5px;
                 order: 0;
+                text-align: center;
             }
             p{
                 font-size: 26px;
                 text-align: justify;
-                padding-left: 5%;
+                
                 order: 1;
             }
             svg{
