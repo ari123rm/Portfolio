@@ -81,19 +81,19 @@
         grid-area: tec;
         list-style-type: none;
         order:2;
-        display:flex;
-        flex-wrap: wrap;
+        display:grid;
+        grid-template-columns: repeat(7, 1fr);
         width: 75vw;
         justify-content: space-around;
         color: white;
         li{
             font-size: x-large;
             display: flex;
-            padding: 10px ;
+            padding: 30px ;
             align-items: center;
             min-width:max-content;
             h3{
-                
+                margin-left: 10px;
             }
         }
     }
