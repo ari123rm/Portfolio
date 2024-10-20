@@ -67,7 +67,7 @@ h1{
         }
         h2{
             font-size: 40px;
-            max-width:25vw ;
+            max-width:40vw ;
             text-align: justify;
         }
     }
@@ -147,4 +147,10 @@ h1{
         }
     }
     
+}
+.habilidades{
+    z-index: 1;
+    position: relative;
+    background-color: black;
+    color:white;
 }

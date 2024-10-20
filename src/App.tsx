@@ -8,10 +8,12 @@ import { FaGithub,FaGitAlt,FaHtml5,FaCss3,FaJs,FaReact,FaNodeJs,FaCuttlefish ,Fa
 import { SiTypescript,SiHandlebarsdotjs,SiDart,SiFlutter,SiExpress } from "react-icons/si";
 function App() {
   const tecnologias:Array<Item> = [new Item({tema:"Git",icon:<FaGitAlt/>}),new Item({tema:"Github",icon:<FaGithub/> }),new Item({tema:"HTML",icon:<FaHtml5/>}),new Item({tema:"CSS",icon:<FaCss3/>}),new Item({tema:"JavaScript",icon:<FaJs/>}),new Item({tema:"React",icon:<FaReact/>}),new Item({tema:"TypeScript",icon:<SiTypescript/>}),new Item({tema:"Node.js",icon:<FaNodeJs />}),new Item({tema:"Express",icon:<SiExpress/>}),new Item({tema:"HandleBars",icon:<SiHandlebarsdotjs/>}),new Item({tema:"C",icon:<FaCuttlefish />}),new Item({tema:"JAVA",icon:<FaJava/>}),new Item({tema:"Dart",icon:<SiDart/>}),new Item({tema:"Flutter",icon:<SiFlutter/>})]
+  
   const conteudo:Array<Temas> = [];
   conteudo.push(new Temas({style: style.capa,titulo:"Olá, sou <br><span>Ariel Rocha de Moraes</span>", imagem:logoImg, subtitulo:"Estudante de Engenharia de Computação <br> IFCE - Campus Fortaleza"}));
-  conteudo.push(new Temas({style:style.sobreMim,titulo:"Sobre mim:",imagem:medalhaImg,subtitulo:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis optio modi voluptate soluta necessitatibus totam sequi, reprehenderit animi ad blanditiis. Provident eos aspernatur suscipit, saepe laudantium quaerat nobis consequuntur odit."}))
+  conteudo.push(new Temas({style:style.sobreMim,titulo:"Sobre mim:",imagem:medalhaImg,subtitulo:"Sou apaixonado por matemática e jogos. Desde pequeno, tenho afinidade em resolução de problemas com lógica e matemática, e naturalmente, me encantei pela computação.<br><br>Atualmente, estou cursando Engenharia da Computação no Instituto Federal do Ceará."}))
   conteudo.push(new Temas({style:style.tecnologia,titulo:"Tecnologias Familiarizadas",lista:tecnologias,imagem:tecnologiaImg}))
+  conteudo.push(new Temas({style:style.habilidades,titulo:"Habilidades Interpessoais"}))
   console.log(conteudo);
   const topicos = conteudo.map((topic)=>topic.render());
   return (
