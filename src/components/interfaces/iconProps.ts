@@ -1,5 +1,5 @@
 export default interface iconProps{
-    biblioteca:"fa"|"si"|"gi"|"img";
+    biblioteca:string;
     icone:string;
     cor?:string;
 }

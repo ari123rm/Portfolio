@@ -43,13 +43,22 @@ export default class Icon extends React.Component<iconProps>{
             lattes: new Img({url: "icons/lattes.png", alt:"Lattes"}),
         }
       };
-    iconEscolhido(biblioteca:"fa"|"si"|"gi"|"img",nome:string) {
+    iconEscolhido(biblioteca:string,nome:string) {
         let IconComponent: IconType |undefined = undefined;
         let ImgComponent:Img|undefined = undefined;
         if(biblioteca == "img"){
             ImgComponent =  this.icones[biblioteca][nome];
         }else{
-            IconComponent =  this.icones[biblioteca][nome];
+            switch(biblioteca){
+                case "fa":
+                case "si":
+                case "gi":
+                    IconComponent =  this.icones[biblioteca][nome];
+                    break;
+                default:
+                    break;
+            }
+            
         }
         
         

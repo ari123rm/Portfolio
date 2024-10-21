@@ -1,8 +1,9 @@
 import React from "react";
 import Parser from 'html-react-parser';
 import temaProps from "./interfaces/temasProps";
-
+import style from './themes/temas.module.scss'
 export default class Temas extends React.Component<temaProps>{
+    
     key = this.props.key ;
     setKey(newKey:number){
         this.key = newKey;
@@ -13,8 +14,9 @@ export default class Temas extends React.Component<temaProps>{
     })
     
     render(){
+        console.log( style);
         return(
-            <div className={"topicos " + this.props.style} key = {this.key}>
+            <div className={"topicos " + style[this.props.style]} key = {this.key}>
             {(this.props.titulo) ? (
                 <div>
                 <h1>{Parser(this.props.titulo)}</h1>
