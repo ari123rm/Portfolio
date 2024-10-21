@@ -22,7 +22,7 @@ function App() {
   conteudo.push(new Temas({style:style.tecnologia,titulo:"Tecnologias Familiarizadas",lista:tecnologias,imagem:tecnologiaImg}))
   conteudo.push(new Temas({style:style.habilidades,titulo:"Habilidades Interpessoais",lista :habilidades}))
   conteudo.push(new Temas({style:style.projetos,titulo:"Meus Projetos",lista:projetos}))
-  console.log(conteudo);
+  console.log(conteudo.toString());
   const topicos = conteudo.map((topic)=>topic.render());
   return (
     <>
