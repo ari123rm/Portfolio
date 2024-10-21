@@ -3,11 +3,11 @@ import Item from "../Item";
 
 export default interface temaProps{
     style:string;
-    key?:number;
-    titulo?:string|undefined;
-    imagem?:Img|undefined;
-    subtitulo?:string|undefined;
-    texto?:string|undefined;
-    lista?:Array<Item>|undefined;
+    titulo:string;
+    imagem?:Img|null;
+    subtitulo?:string|null;
+    texto?:string|null;
+    lista?:Array<Item>|null;
+    key?:number|null;
 }
 

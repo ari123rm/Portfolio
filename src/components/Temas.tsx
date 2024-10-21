@@ -21,6 +21,7 @@ export default class Temas extends React.Component<temaProps>{
                 {this.props.subtitulo ? (
                     <h2>{Parser(this.props.subtitulo)}</h2>
                 ):( <></>  )}
+                {this.props.texto ? (<p>{Parser(this.props.texto)}</p>):(<></>)}
                 </div>
             ):( <></> ) }
             
@@ -30,7 +31,7 @@ export default class Temas extends React.Component<temaProps>{
             ):(
                 <></>
             )}
-            {this.props.texto ? (<p>{Parser(this.props.texto)}</p>):(<></>)}
+            
             { (this.props.lista) ? (
                 <ul>
                     {this.itens}

@@ -1,0 +1,30 @@
+{
+   "conteudo":[
+      {
+         "key":0,
+         "style":"topicos_capa__f8BVR",
+         "titulo":"Olá, sou <br><span>Ariel Rocha de Moraes</span>",
+         "subtitulo":"Estudante de Engenharia de Computação <br> IFCE - Campus Fortaleza",
+         "imagem":{
+            "url":"images/logo.png",
+            "alt":"Logo"
+         },
+         "lista":[
+
+         ]
+      },
+      {
+         "key":1,
+         "style":"topicos_sobreMim__Ot0hJ",
+         "titulo":"Sobre mim:",
+         "texto":"Sou apaixonado por matemática e jogos. Desde pequeno, tenho afinidade em resolução de problemas com lógica e matemática, e naturalmente, me encantei pela computação.",
+         "imagem":{
+            "url":"images/medalha.jpeg",
+            "alt":"Medalha de Ouro OBMEP 2019"  
+         },
+         "lista":[
+            
+         ]
+      }
+   ]
+}
