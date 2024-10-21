@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import content from './assets/langs/pt-br.json'
+import content from './assets/langs/en.json'
 import Img from './components/Img';
 import Icon from './components/Icon';
 import Temas from './components/Temas';
@@ -9,6 +9,7 @@ import Item from './components/Item';
 import Footer from './components/Footer';
 import listaItem from './components/listaItem';
 function App() {
+
   const conteudo:Array<Temas> = [];
   content.home.forEach((tema)=>{
     const imagem = tema.imagem?new Img({url:tema.imagem.url,alt:tema.imagem.alt}):undefined;
