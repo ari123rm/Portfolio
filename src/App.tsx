@@ -23,7 +23,9 @@ function App() {
   conteudo.push(new Temas({style:style.habilidades,titulo:"Habilidades Interpessoais",lista :habilidades}))
   conteudo.push(new Temas({style:style.projetos,titulo:"Meus Projetos",lista:projetos}))
   console.log(conteudo);
-  const topicos = conteudo.map((topic)=>topic.render());
+  const topicos = conteudo.map((topic,index)=>{
+    topic.setKey(index);
+    return topic.render()});
   return (
     <>
     <div>
