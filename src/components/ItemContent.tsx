@@ -6,7 +6,7 @@ export default class ItemContent extends React.Component<itemProps>{
     render(){
         return(
             <>
-            {this.props.icon  ? (<>{this.props.icon}</>):(<></>)}         
+            {this.props.icon  ? (<>{this.props.icon.render()}</>):(<></>)}         
             <div>
                 <h3>{Parser(this.props.tema)}</h3>
                 {this.props.texto  ? (<p>{Parser(this.props.texto)}</p>):(<></>)}

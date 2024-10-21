@@ -3,14 +3,15 @@ import { FaGithub,FaGitAlt,FaHtml5,FaCss3,FaJs,FaReact,FaNodeJs,FaCuttlefish ,Fa
 import { SiTypescript,SiHandlebarsdotjs,SiDart,SiFlutter,SiExpress,SiGmail } from "react-icons/si";
 import { GiBrain,GiTeamIdea } from "react-icons/gi";
 import iconProps from './interfaces/iconProps';
-import { JsxElement } from 'typescript';
 import { IconType } from 'react-icons';
+import Img from './Img';
 
 export default class Icon extends React.Component<iconProps>{
     icones: { 
         fa: { [key: string]: IconType },
         si: { [key: string]: IconType },
-        gi: { [key: string]: IconType }
+        gi: { [key: string]: IconType },
+        img: {[key:string]: Img}
       } = {
         fa: {
           github: FaGithub,
@@ -38,14 +39,33 @@ export default class Icon extends React.Component<iconProps>{
           brain: GiBrain,
           teamIdea: GiTeamIdea,
         },
+        img:{
+            lattes: new Img({url: "icons/lattes.png", alt:"Lattes"}),
+        }
       };
-    iconEscolhido(biblioteca:"fa"|"si"|"gi",nome:string) {
-        const IconComponent: IconType | undefined = this.icones[biblioteca][nome];
-    
+    iconEscolhido(biblioteca:"fa"|"si"|"gi"|"img",nome:string) {
+        let IconComponent: IconType |undefined = undefined;
+        let ImgComponent:Img|undefined = undefined;
+        if(biblioteca == "img"){
+            ImgComponent =  this.icones[biblioteca][nome];
+        }else{
+            IconComponent =  this.icones[biblioteca][nome];
+        }
+        
+        
         // Verifica se o ícone foi encontrado antes de renderizar
         if (IconComponent) {
-          return (<IconComponent color={this.props.cor}/>);
-        } else {
+            return (
+                <IconComponent color={this.props.cor}/>
+                
+            );
+        } else if(ImgComponent){
+            return (
+                <>
+                    {ImgComponent.render()}
+                </>
+            )
+        }else{
           return (<p>Ícone não encontrado!</p>);
         }
     }

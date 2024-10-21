@@ -5,4 +5,3 @@ function images(arquivo:string):string{
 }
 export const tecnologiaImg:Img = new Img({url:images("tecnologias.gif"),alt:"Imagem de um código"});
 export const projectXImg:Img = new Img({url:images("projetoX.jpg"),alt:"Project X"});
-export const lattesIcon:Img = new Img({url: "icons/lattes.png", alt:"Lattes"})
