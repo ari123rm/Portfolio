@@ -3,7 +3,10 @@ import footerProps from "./interfaces/footerProps";
 import style from "./themes/footer.module.scss";
 import { FaPhone } from "react-icons/fa";
 export default class Footer extends React.Component<footerProps>{
-    contact = this.props.contatos?.map((item)=>item.render())
+    contact = this.props.contatos?.map((item,index)=>{
+        item.setKey(index);
+        return item.render()
+    })
         render(){
             return(
                 <footer className={"topicos "+style.rodape}>

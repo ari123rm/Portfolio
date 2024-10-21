@@ -4,6 +4,7 @@ import Img from "../Img";
 import Item from "../Item";
 export default interface itemProps{
     tema : string;
+    key?:number ;
     texto?: string|undefined;
     icon?:undefined|IconBaseProps|ReactNode;
     imagem?:Img|undefined;
