@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Temas from './components/Temas';
 import Item from './components/Item';
-import { logoImg,medalhaImg,tecnologiaImg, projectXImg ,lattesIcon } from './components/imagens';
+import {tecnologiaImg, projectXImg ,lattesIcon } from './components/imagens';
 import style from './components/themes/topicos.module.scss'
 import { FaGithub,FaGitAlt,FaHtml5,FaCss3,FaJs,FaReact,FaNodeJs,FaCuttlefish ,FaJava,FaPuzzlePiece, FaInstagram,FaLinkedin } from "react-icons/fa";
 import { SiTypescript,SiHandlebarsdotjs,SiDart,SiFlutter,SiExpress,SiGmail } from "react-icons/si";
@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import toJson from './assets/toJson';
 import obj from './assets/langs/pt-bt.json'
 import Img from './components/Img';
+import listaItem from './components/listaItem';
 function App() {
   const tecnologias:Array<Item> = [new Item({tema:"Git",icon:<FaGitAlt/>}),new Item({tema:"Github",icon:<FaGithub/> }),new Item({tema:"HTML",icon:<FaHtml5/>}),new Item({tema:"CSS",icon:<FaCss3/>}),new Item({tema:"JavaScript",icon:<FaJs/>}),new Item({tema:"React",icon:<FaReact/>}),new Item({tema:"TypeScript",icon:<SiTypescript/>}),new Item({tema:"Node.js",icon:<FaNodeJs />}),new Item({tema:"Express",icon:<SiExpress/>}),new Item({tema:"HandleBars",icon:<SiHandlebarsdotjs/>}),new Item({tema:"C",icon:<FaCuttlefish />}),new Item({tema:"JAVA",icon:<FaJava/>}),new Item({tema:"Dart",icon:<SiDart/>}),new Item({tema:"Flutter",icon:<SiFlutter/>})]
   const habilidades:Array<Item> = [new Item({tema:"Criatividade",icon:<GiBrain/>,texto:"Gosto de explorar novas abordagens e pensar de forma original para superar desafios de maneira eficiente."}),new Item({tema:"Resolução de problemas",icon:<FaPuzzlePiece />,texto:"Desde pequeno fui incentivado a procurar as melhores soluções dos problemas, me rendendo premiações em olimpíadas de conhecimento."}),new Item({tema:"Trabalho em Equipe",texto:"Sou colaborativo, sempre busco contribuir para o sucesso da equipe. Minha flexibilidade e foco em resultados coletivos fazem de mim um parceiro valioso em qualquer grupo.",icon:<GiTeamIdea/>})]
@@ -21,12 +22,13 @@ function App() {
   }
   const conteudo:Array<Temas> = [];
   obj.conteudo.forEach((tema)=>{
-    conteudo.push(new Temas({style:tema.style,titulo:tema.titulo,subtitulo:tema.subtitulo,texto:tema.texto,lista:tema.lista,imagem:new Img({url:tema.imagem.url,alt:tema.imagem.alt}),key:tema.key} ));
+    let items:Array<Item> = [];
+    conteudo.push(new Temas({style:tema.style,titulo:tema.titulo,subtitulo:tema.subtitulo,texto:tema.texto,lista:listaItem(tema.lista),imagem:new Img({url:tema.imagem.url,alt:tema.imagem.alt}),key:tema.key}));
   })
   conteudo.push(new Temas({style:style.tecnologia,titulo:"Tecnologias Familiarizadas",lista:tecnologias,imagem:tecnologiaImg}))
   conteudo.push(new Temas({style:style.habilidades,titulo:"Habilidades Interpessoais",lista :habilidades}))
   conteudo.push(new Temas({style:style.projetos,titulo:"Meus Projetos",lista:projetos}))
-  console.log()
+  console.log(GiBrain.toString())
 
   const topicos = conteudo.map((topic,index)=>{
     topic.setKey(index);
