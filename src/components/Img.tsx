@@ -1,6 +1,6 @@
 import React from "react";
 import Parser from 'html-react-parser';
-import imgProps from "./types/imgProps";
+import imgProps from "./interfaces/imgProps";
 
 export default class Img extends React.Component<imgProps>{
     render() {

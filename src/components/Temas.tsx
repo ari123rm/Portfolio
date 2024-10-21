@@ -1,6 +1,6 @@
 import React from "react";
 import Parser from 'html-react-parser';
-import temaProps from "./types/temasProps";
+import temaProps from "./interfaces/temasProps";
 
 export default class Temas extends React.Component<temaProps>{
     itens = this.props.lista?.map((item)=>item.render())
