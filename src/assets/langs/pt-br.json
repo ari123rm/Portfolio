@@ -7,7 +7,7 @@
          "titulo":"Olá, sou <br><span>Ariel Rocha de Moraes</span>",
          "subtitulo":"Estudante de Engenharia de Computação <br> IFCE - Campus Fortaleza",
          "imagem":{
-            "url":"images/logo.png",
+            "url":"images/home/logo.png",
             "alt":"Logo"
          }
       },
@@ -17,7 +17,7 @@
          "titulo":"Sobre mim:",
          "texto":"Sou apaixonado por matemática e jogos. Desde pequeno, tenho afinidade em resolução de problemas com lógica e matemática, e naturalmente, me encantei pela computação.",
          "imagem":{
-            "url":"images/medalha.jpeg",
+            "url":"images/home/medalha.jpeg",
             "alt":"Medalha de Ouro OBMEP 2019"  
          }
       },
@@ -26,7 +26,7 @@
          "style":"tecnologia",
          "titulo":"Tecnologias Familiarizadas",
          "imagem":{
-            "url":"images/tecnologias.gif", 
+            "url":"images/home/tecnologias.gif", 
             "alt":"Imagem de um código"
          },
          "lista":[
@@ -254,7 +254,7 @@
                "texto": "Descrição do Projeto",
                "href": "/",
                "imagem": {
-                  "url":"images/projetoX.jpg",
+                  "url":"images/home/projetoX.jpg",
                   "alt":"Projeto X"
                },
                "lista": [
@@ -283,7 +283,7 @@
                "texto": "Descrição do Projeto",
                "href": "/",
                "imagem": {
-                  "url":"images/projetoX.jpg",
+                  "url":"images/home/projetoX.jpg",
                   "alt":"Projeto X"
                },
                "lista": [
@@ -312,7 +312,7 @@
                "texto": "Descrição do Projeto",
                "href": "/",
                "imagem": {
-                  "url":"images/projetoX.jpg",
+                  "url":"images/home/projetoX.jpg",
                   "alt":"Projeto X"
                },
                "lista": [
@@ -341,7 +341,7 @@
                "texto": "Descrição do Projeto",
                "href": "/",
                "imagem": {
-                  "url":"images/projetoX.jpg",
+                  "url":"images/home/projetoX.jpg",
                   "alt":"Projeto X"
                },
                "lista": [
@@ -370,7 +370,7 @@
                "texto": "Descrição do Projeto",
                "href": "/",
                "imagem": {
-                  "url":"images/projetoX.jpg",
+                  "url":"images/home/projetoX.jpg",
                   "alt":"Projeto X"
                },
                "lista": [
@@ -399,7 +399,7 @@
                "texto": "Descrição do Projeto",
                "href": "/",
                "imagem": {
-                  "url":"images/projetoX.jpg",
+                  "url":"images/home/projetoX.jpg",
                   "alt":"Projeto X"
                },
                "lista": [
@@ -428,7 +428,7 @@
                "texto": "Descrição do Projeto",
                "href": "/",
                "imagem": {
-                  "url":"images/projetoX.jpg",
+                  "url":"images/home/projetoX.jpg",
                   "alt":"Projeto X"
                },
                "lista": [
@@ -457,7 +457,7 @@
                "texto": "Descrição do Projeto",
                "href": "/",
                "imagem": {
-                  "url":"images/projetoX.jpg",
+                  "url":"images/home/projetoX.jpg",
                   "alt":"Projeto X"
                },
                "lista": [
@@ -486,7 +486,7 @@
                "texto": "Descrição do Projeto",
                "href": "/",
                "imagem": {
-                  "url":"images/projetoX.jpg",
+                  "url":"images/home/projetoX.jpg",
                   "alt":"Projeto X"
                },
                "lista": [
@@ -515,7 +515,7 @@
                "texto": "Descrição do Projeto",
                "href": "/",
                "imagem": {
-                  "url":"images/projetoX.jpg",
+                  "url":"images/home/projetoX.jpg",
                   "alt":"Projeto X"
                },
                "lista": [
@@ -542,6 +542,11 @@
       }
       
    ]},
+   "projetos":{
+      "projetos-em-C":{
+         
+      }
+   },
    "footer":{
       "titulo":"Meus Contatos",
       "contatos":[
