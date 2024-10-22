@@ -14,7 +14,6 @@ export default class Temas extends React.Component<temaProps>{
     })
     
     render(){
-        console.log( style);
         return(
             <div className={"topicos " + style[this.props.style]} key = {this.key}>
             {(this.props.titulo) ? (
