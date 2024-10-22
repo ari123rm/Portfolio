@@ -1,5 +1,5 @@
-import Img from "../Img";
-import Item from "../Item";
+import Img from "../classes/Img";
+import Item from "../classes/Item";
 
 export default interface temaProps{
     style:string;

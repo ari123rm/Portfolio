@@ -1,7 +1,7 @@
 import React from "react";
 import Parser from 'html-react-parser';
-import temaProps from "./interfaces/temasProps";
-import style from './themes/temas.module.scss'
+import temaProps from "../interfaces/temasProps";
+import style from '../themes/temas.module.scss'
 export default class Temas extends React.Component<temaProps>{
     
     key = this.props.key ;

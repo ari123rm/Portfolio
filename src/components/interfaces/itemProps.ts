@@ -1,6 +1,6 @@
-import Img from "../Img";
-import Item from "../Item";
-import Icon from "../Icon";
+import Img from "../classes/Img";
+import Item from "../classes/Item";
+import Icon from "../classes/Icon";
 export default interface itemProps{
     tema : string;
     key?:number ;

@@ -1,5 +1,6 @@
 {
-   "home":[
+   "home":{
+      "content" :[
       {
          "key":0,
          "style":"capa",
@@ -540,7 +541,7 @@
          ]
       }
       
-   ],
+   ]},
    "footer":{
       "titulo":"Meus Contatos",
       "contatos":[

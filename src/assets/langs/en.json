@@ -1,5 +1,7 @@
 {
-   "home":[
+   "home":{
+    "content":[
+ 
       {
          "key":0,
          "style":"capa",
@@ -146,7 +148,7 @@
       {
          "key":3,
          "style":"habilidades",
-         "titulo":"Interpersonal Skills",
+         "titulo":"Soft Skills",
          "lista":[
             {
                "key": 0,
@@ -212,7 +214,9 @@
             }
          ]
       }
-   ],
+    
+    ]
+   } ,
    "footer":{
       "titulo":"My Contacts",
       "contatos":[

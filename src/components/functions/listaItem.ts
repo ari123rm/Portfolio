@@ -1,7 +1,7 @@
-import itemProps from "./interfaces/itemProps";
-import Item from "./Item";
-import Img from "./Img";
-import Icon from "./Icon";
+import itemProps from "../interfaces/itemProps";
+import Item from "../classes/Item";
+import Img from "../classes/Img";
+import Icon from "../classes/Icon";
 export default function listaItem(items:Array<any>|undefined){
     if(!items)return undefined;
     const array:Array<Item> = [];

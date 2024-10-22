@@ -1,5 +1,5 @@
 import React from "react";
-import itemProps from "./interfaces/itemProps";
+import itemProps from "../interfaces/itemProps";
 import Parser from 'html-react-parser';
 export default class ItemContent extends React.Component<itemProps>{
     itens = this.props.lista?.map((item)=>item.render())
