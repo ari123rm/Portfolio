@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import content from './assets/langs/en.json'
+import content from './assets/langs/pt-br.json'
 import Img from './components/Img';
 import Icon from './components/Icon';
 import Temas from './components/Temas';

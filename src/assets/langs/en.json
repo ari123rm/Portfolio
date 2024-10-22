@@ -1,260 +1,259 @@
 {
-    "home":[
-       {
-          "key":0,
-          "style":"capa",
-          "titulo":"Hello, I am <br><span>Ariel Rocha de Moraes</span>",
-          "subtitulo":"Computer Engineering Student <br> IFCE - Fortaleza Campus",
-          "imagem":{
-             "url":"images/logo.png",
-             "alt":"Logo"
-          }
-       },
-       {
-          "key":1,
-          "style":"sobreMim",
-          "titulo":"About Me:",
-          "texto":"I am passionate about mathematics and games. Since I was young, I have had an affinity for solving problems with logic and mathematics, and naturally, I became fascinated with computing.",
-          "imagem":{
-             "url":"images/medalha.jpeg",
-             "alt":"Gold Medal OBMEP 2019"  
-          }
-       },
-       {
-          "key":2,
-          "style":"tecnologia",
-          "titulo":"Familiar Technologies",
-          "imagem":{
-             "url":"images/tecnologias.gif", 
-             "alt":"Image of code"
-          },
-          "lista":[
-             {
+   "home":[
+      {
+         "key":0,
+         "style":"capa",
+         "titulo":"Hello, I am <br><span>Ariel Rocha de Moraes</span>",
+         "subtitulo":"Computer Engineering Student <br> IFCE - Fortaleza Campus",
+         "imagem":{
+            "url":"images/logo.png",
+            "alt":"Logo"
+         }
+      },
+      {
+         "key":1,
+         "style":"sobreMim",
+         "titulo":"About Me:",
+         "texto":"I am passionate about mathematics and games. Since I was young, I have had an affinity for solving problems with logic and mathematics, and naturally, I became fascinated with computing.",
+         "imagem":{
+            "url":"images/medalha.jpeg",
+            "alt":"Gold Medal OBMEP 2019"  
+         }
+      },
+      {
+         "key":2,
+         "style":"tecnologia",
+         "titulo":"Familiar Technologies",
+         "imagem":{
+            "url":"images/tecnologias.gif", 
+            "alt":"Image of code"
+         },
+         "lista":[
+            {
+              "key": 0,
+              "tema": "Git",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "gitAlt"
+              }
+            },
+            {
+              "key": 1,
+              "tema": "Github",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "github"
+              }
+            },
+            {
+              "key": 2,
+              "tema": "HTML",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "html5"
+              }
+            },
+            {
+              "key": 3,
+              "tema": "CSS",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "css3"
+              }
+            },
+            {
+              "key": 4,
+              "tema": "JavaScript",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "javascript"
+              }
+            },
+            {
+              "key": 5,
+              "tema": "React",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "react"
+              }
+            },
+            {
+              "key": 6,
+              "tema": "TypeScript",
+              "icon": {
+                "biblioteca": "si",
+                "icone": "typescript"
+              }
+            },
+            {
+              "key": 7,
+              "tema": "Node.js",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "nodeJs"
+              }
+            },
+            {
+              "key": 8,
+              "tema": "Express",
+              "icon": {
+                "biblioteca": "si",
+                "icone": "express"
+              }
+            },
+            {
+              "key": 9,
+              "tema": "HandleBars",
+              "icon": {
+                "biblioteca": "si",
+                "icone": "handlebars"
+              }
+            },
+            {
+              "key": 10,
+              "tema": "C",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "cuttlefish"
+              }
+            },
+            {
+              "key": 11,
+              "tema": "JAVA",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "java"
+              }
+            },
+            {
+              "key": 12,
+              "tema": "Dart",
+              "icon": {
+                "biblioteca": "si",
+                "icone": "dart"
+              }
+            },
+            {
+              "key": 13,
+              "tema": "Flutter",
+              "icon": {
+                "biblioteca": "si",
+                "icone": "flutter"
+              }
+            }
+          ]   
+      },
+      {
+         "key":3,
+         "style":"habilidades",
+         "titulo":"Interpersonal Skills",
+         "lista":[
+            {
                "key": 0,
-               "tema": "Git",
+               "tema": "Creativity",
                "icon": {
-                 "biblioteca": "fa",
-                 "icone": "gitAlt"
-               }
-             },
-             {
+                  "biblioteca": "gi",
+                  "icone": "brain"
+               },
+               "texto": "I enjoy exploring new approaches and thinking creatively to efficiently overcome challenges."
+            },
+            {
                "key": 1,
-               "tema": "Github",
+               "tema": "Problem Solving",
                "icon": {
-                 "biblioteca": "fa",
-                 "icone": "github"
-               }
-             },
-             {
+                  "biblioteca": "fa",
+                  "icone": "puzzlePiece"
+               },
+               "texto": "Since I was young, I have been encouraged to seek the best solutions to problems, earning awards in knowledge competitions."
+            },
+            {
                "key": 2,
-               "tema": "HTML",
+               "tema": "Teamwork",
                "icon": {
-                 "biblioteca": "fa",
-                 "icone": "html5"
-               }
-             },
-             {
-               "key": 3,
-               "tema": "CSS",
-               "icon": {
-                 "biblioteca": "fa",
-                 "icone": "css3"
-               }
-             },
-             {
-               "key": 4,
-               "tema": "JavaScript",
-               "icon": {
-                 "biblioteca": "fa",
-                 "icone": "javascript"
-               }
-             },
-             {
-               "key": 5,
-               "tema": "React",
-               "icon": {
-                 "biblioteca": "fa",
-                 "icone": "react"
-               }
-             },
-             {
-               "key": 6,
-               "tema": "TypeScript",
-               "icon": {
-                 "biblioteca": "si",
-                 "icone": "typescript"
-               }
-             },
-             {
-               "key": 7,
-               "tema": "Node.js",
-               "icon": {
-                 "biblioteca": "fa",
-                 "icone": "nodeJs"
-               }
-             },
-             {
-               "key": 8,
-               "tema": "Express",
-               "icon": {
-                 "biblioteca": "si",
-                 "icone": "express"
-               }
-             },
-             {
-               "key": 9,
-               "tema": "HandleBars",
-               "icon": {
-                 "biblioteca": "si",
-                 "icone": "handlebars"
-               }
-             },
-             {
-               "key": 10,
-               "tema": "C",
-               "icon": {
-                 "biblioteca": "fa",
-                 "icone": "cuttlefish"
-               }
-             },
-             {
-               "key": 11,
-               "tema": "JAVA",
-               "icon": {
-                 "biblioteca": "fa",
-                 "icone": "java"
-               }
-             },
-             {
-               "key": 12,
-               "tema": "Dart",
-               "icon": {
-                 "biblioteca": "si",
-                 "icone": "dart"
-               }
-             },
-             {
-               "key": 13,
-               "tema": "Flutter",
-               "icon": {
-                 "biblioteca": "si",
-                 "icone": "flutter"
-               }
-             }
-           ]   
-       },
-       {
-          "key":3,
-          "style":"habilidades",
-          "titulo":"Interpersonal Skills",
-          "lista":[
-             {
-                "key": 0,
-                "tema": "Creativity",
-                "icon": {
-                   "biblioteca": "gi",
-                   "icone": "brain"
-                },
-                "texto": "I enjoy exploring new approaches and thinking creatively to efficiently overcome challenges."
-             },
-             {
-                "key": 1,
-                "tema": "Problem Solving",
-                "icon": {
-                   "biblioteca": "fa",
-                   "icone": "puzzlePiece"
-                },
-                "texto": "Since I was young, I have been encouraged to seek the best solutions to problems, earning awards in knowledge competitions."
-             },
-             {
-                "key": 2,
-                "tema": "Teamwork",
-                "icon": {
-                   "biblioteca": "gi",
-                   "icone": "teamIdea"
-                },
-                "texto": "I am collaborative and always seek to contribute to the success of the team. My flexibility and focus on collective results make me a valuable partner in any group."
-             }
-          ]
-       },
-       {
-          "key":4,
-          "style":"projetos",
-          "titulo":"My Projects",
-          "lista":[
-             {
-                "key": 0,
-                "tema": "Project X",
-                "texto": "Project Description",
-                "href": "/",
-                "imagem": {
-                   "url":"images/projetoX.jpg",
-                   "alt":"Project X"
-                },
-                "lista": [
-                   {
-                      "key": 0,
-                      "tema": "Git",
-                      "icon": {
-                        "biblioteca": "fa",
-                        "icone": "gitAlt"
-                      }
-                   },
-                   {
-                      "key": 1,
-                      "tema": "React",
-                      "icon": {
-                        "biblioteca": "fa",
-                        "icone": "react"
-                      }
-                   }
-                   ]
-             }
-          ]
-       }
-    ],
-    "footer":{
-       "titulo":"My Contacts",
-       "contatos":[
-          {
-            "key": 0,
-            "tema": "ari123rm",
-            "href": "https://github.com/ari123rm",
-            "icon": {
-              "biblioteca": "fa",
-              "icone": "github"
+                  "biblioteca": "gi",
+                  "icone": "teamIdea"
+               },
+               "texto": "I am collaborative and always seek to contribute to the success of the team. My flexibility and focus on collective results make me a valuable partner in any group."
             }
-          },
-          {
-            "key": 1,
-            "tema": "arielmoraes05@gmail.com",
-            "href": "mailto:arielmoraes05@gmail.com",
-            "icon": {
-              "biblioteca": "si",
-              "icone": "gmail",
-              "cor": "red"
+         ]
+      },
+      {
+         "key":4,
+         "style":"projetos",
+         "titulo":"My Projects",
+         "lista":[
+            {
+               "key": 0,
+               "tema": "Project X",
+               "texto": "Project Description",
+               "href": "/",
+               "imagem": {
+                  "url":"images/projetoX.jpg",
+                  "alt":"Project X"
+               },
+               "lista": [
+                  {
+                     "key": 0,
+                     "tema": "Git",
+                     "icon": {
+                       "biblioteca": "fa",
+                       "icone": "gitAlt"
+                     }
+                  },
+                  {
+                     "key": 1,
+                     "tema": "React",
+                     "icon": {
+                       "biblioteca": "fa",
+                       "icone": "react"
+                     }
+                  }
+                  ]
             }
-          },
-          {
-            "key": 2,
-            "tema": "Ariel Rocha de Moraes",
-            "href": "https://www.linkedin.com/in/ariel-rocha-de-moraes-1653132a0/",
-            "icon": {
-              "biblioteca": "fa",
-              "icone": "linkedin",
-              "cor": "#0e76a8"
-            }
-          },
-          {
-            "key": 3,
-            "tema": "Lattes",
-            "href": "http://lattes.cnpq.br/7435278675589514",
-            "icon": {
-              "biblioteca": "img",
-              "icone": "lattes"
-            }
-          }
-        ]
-    }
- }
- 
+         ]
+      }
+   ],
+   "footer":{
+      "titulo":"My Contacts",
+      "contatos":[
+         {
+           "key": 0,
+           "tema": "ari123rm",
+           "href": "https://github.com/ari123rm",
+           "icon": {
+             "biblioteca": "fa",
+             "icone": "github"
+           }
+         },
+         {
+           "key": 1,
+           "tema": "arielmoraes05@gmail.com",
+           "href": "mailto:arielmoraes05@gmail.com",
+           "icon": {
+             "biblioteca": "si",
+             "icone": "gmail",
+             "cor": "red"
+           }
+         },
+         {
+           "key": 2,
+           "tema": "Ariel Rocha de Moraes",
+           "href": "https://www.linkedin.com/in/ariel-rocha-de-moraes-1653132a0/",
+           "icon": {
+             "biblioteca": "fa",
+             "icone": "linkedin",
+             "cor": "#0e76a8"
+           }
+         },
+         {
+           "key": 3,
+           "tema": "Lattes",
+           "href": "http://lattes.cnpq.br/7435278675589514",
+           "icon": {
+             "biblioteca": "img",
+             "icone": "lattes"
+           }
+         }
+       ]
+   }
+}
