@@ -3,7 +3,7 @@ import './App.css';
 import lang from './components/functions/lang';
 
 
-import Home from './components/home/Home';
+import Home from './pages/Home';
 import Footer from './components/Footer';
 
 function App() {

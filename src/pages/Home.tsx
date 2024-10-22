@@ -1,8 +1,8 @@
 import React from "react";
-import Temas from "../classes/Temas";
-import Img from "../classes/Img";
-import listaItem from "../functions/listaItem";
-import ContentType from "../types/contentType";
+import Temas from "../components/classes/Temas";
+import Img from "../components/classes/Img";
+import listaItem from "../components/functions/listaItem";
+import ContentType from "../components/types/contentType";
 
 
 export default class Home extends React.Component<ContentType["home"]>{

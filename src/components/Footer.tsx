@@ -1,12 +1,26 @@
 import React from "react";
-import footerProps from "./interfaces/footerProps";
 import style from "./themes/footer.module.scss";
 import { FaPhone } from "react-icons/fa";
 import ContentType from "./types/contentType";
-import contatos from "./functions/contatos";
-export default class Footer extends React.Component<ContentType["footer"]>{
+import Item from "./classes/Item";
+import Icon from "./classes/Icon";
 
-    contact = contatos(this.props.contatos).map((item)=> item.render());
+export default class Footer extends React.Component<ContentType["footer"]>{
+    contatos(conteudo:ContentType["footer"]["contatos"]){
+        const contatos:Array<Item> = [];
+        conteudo.forEach((contato)=>{
+            const icon = new Icon({biblioteca:contato.icon.biblioteca,icone:contato.icon.icone,cor:contato.icon.cor});
+            contatos.push(
+              new Item({
+                tema:contato.tema,
+                icon:icon,
+                key:contato.key,
+                href:contato.href
+              })
+            )
+        })
+        return contatos;
+    }
 
     render(){
         return(
@@ -15,7 +29,7 @@ export default class Footer extends React.Component<ContentType["footer"]>{
                 <div>
                 
                 <ul>
-                    {this.contact}
+                    {this.contatos(this.props.contatos).map((item)=> item.render())}
                 </ul>
                 <FaPhone/>
                 </div>
