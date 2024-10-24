@@ -154,8 +154,8 @@
               "key": 10,
               "tema": "C",
               "icon": {
-                "biblioteca": "fa",
-                "icone": "cuttlefish"
+                  "biblioteca": "pi",
+                  "icone": "c"
               },
               "imagem": null,
               "texto": null,
@@ -566,7 +566,7 @@
                   ]
                   },
                   "console":{
-                     "url":"",
+                     "url":"../../assets/projects/ProjetosC/Projetos/Sudoku/main.c",
                      "linguagens":["c"]
                   }
                }
