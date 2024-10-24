@@ -4,8 +4,7 @@ import  CConsole from "../components/classes/Cconsole";
 import Temas from "../components/classes/Temas";
 import Img from "../components/classes/Img";
 import listaItem from "../components/functions/listaItem";
-import { BrowserRouter, Routes,  Route ,Link  } from 'react-router-dom';
-
+import { Routes,  Route  } from 'react-router-dom';
 import projectProps from "../components/interfaces/projectProps";
 import consoleProps from "../components/interfaces/consoleProps";
 import Programa from "../components/classes/Programa";
@@ -13,7 +12,7 @@ import Programa from "../components/classes/Programa";
 export default class Projetos extends React.Component<ContentType["projetos"]>{
     projects = this.props.projects;
     buildProjetos(){
-        const projetos:Array<{tipo:string;url?:string,programas:Array<projectProps>}> = [];
+        const projetos:Array<{tipo:string;url?:string,programas:Array<projectProps>,key:number}> = [];
         
         this.projects.map((projeto)=>{
             const programas:Array<projectProps> = [];
@@ -43,7 +42,7 @@ export default class Projetos extends React.Component<ContentType["projetos"]>{
                     console:console
                 })
                 
-                projetos.push({tipo:projeto.tipo,url:projeto.url,programas:programas})
+                projetos.push({tipo:projeto.tipo,url:projeto.url,programas:programas,key:projeto.key})
             })
            
         })
@@ -53,20 +52,26 @@ export default class Projetos extends React.Component<ContentType["projetos"]>{
     render(){
         return (
             <Routes>
+
+            <>
                 {
-                    this.buildProjetos().map(projeto=>
-                    <>
+                    this.buildProjetos().map((projeto,index)=>
+                    <Route path={projeto.url + "/*"} key = {index} element =
                         {
-                            projeto.programas.map(programa=>
-                                <>
-                                <Route path={projeto.url + "/" + programa.url} element = {<Programa {...programa} />}/>
-                                </>
-                            )
-                        
+                            <Routes>
+                            {
+                                projeto.programas.map((programa,index)=>
+                                
+                                    <Route path={programa.url} element = {<Programa {...programa} key = {index}/>}/>
+                                    
+                                )
+                            }
+                            </Routes>
                         }
-                    </>
+                    />
                     )
                 }
+            </>
             </Routes>
         )
     }

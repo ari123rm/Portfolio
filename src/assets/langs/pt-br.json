@@ -250,30 +250,23 @@
          "lista":[
             {
                "key": 0,
-               "tema": "Projeto X",
-               "texto": "Descrição do Projeto",
-               "href": "/",
+               "tema": "Sudoku",
+               "texto": "O jogo sudoku com 4 níveis de dificuldade e sistema de pontuação para a diversão do jogador.",
+               "href": "/Projetos/Programas-em-C/sudoku",
                "imagem": {
-                  "url":"images/home/projetoX.jpg",
-                  "alt":"Projeto X"
+                  "url":"images/projects/programasC/sudoku.png",
+                  "alt":"Tela do Sudoku"
                },
                "lista": [
                   {
                      "key": 0,
-                     "tema": "Git",
+                     "tema": "C",
                      "icon": {
-                       "biblioteca": "fa",
-                       "icone": "gitAlt"
+                       "biblioteca": "pi",
+                       "icone": "c",
+                       "cor":"teal"
                      }
-                  },
-                  {
-                     "key": 1,
-                     "tema": "React",
-                     "icon": {
-                       "biblioteca": "fa",
-                       "icone": "react"
-                     }
-                  }
+                   }
                   ]
                
             },
@@ -545,20 +538,32 @@
    "projetos":{
       "projects":[
          {
+            "key":0,
             "tipo":"projetosC",
-            "url":"Programas-em-C",
+            "url":"/Programas-em-C",
             "programas":[
                {
-                  "url":"sudoku",
+                  "url":"/sudoku",
                   "resumo":{  
                   "key":0,
-                  "style":"projetos",
-                  "titulo":"Projetos em C",
-                  "texto":"Desde pequeno fui incentivado a procurar as melhores soluções dos problemas, me rendendo premiações em olimpíadas de conhecimento.",
+                  "style":"resumo",
+                  "titulo":"Sudoku",
+                  "texto":"Jogo sudoku feito em C, o programa utiliza armazenamento dinâmico, possui estruturas de dados internas com alocação dinâmica, além disso, possui um sistema de pontuação e mostra a melhor pontuação que o jogador alcançou na jogatina.",
                   "imagem":{
-                     "url":"images/home/medalha.jpeg",
-                     "alt":"Medalha de Ouro OBMEP 2019"  
-                  }
+                     "url":"images/projects/programasC/sudoku.png",
+                     "alt":"Tela do Sudoku"  
+                  },
+                  "lista":[
+                     {
+                        "key": 0,
+                        "tema": "C",
+                        "icon": {
+                          "biblioteca": "pi",
+                          "icone": "c",
+                          "cor":"teal"
+                        }
+                      }
+                  ]
                   },
                   "console":{
                      "url":"",

@@ -43,6 +43,7 @@ type ContentType = {
     home: Home;
     projetos:{
         projects :Array<{
+            key:number;
             tipo:string;
             url?:string;
             programas:Array<projetos>

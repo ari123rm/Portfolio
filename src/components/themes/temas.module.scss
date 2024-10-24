@@ -272,12 +272,11 @@ h1{
                 }
                 img{
                     width: auto;
-                    transform: translate(-25%);
-                    height: 100%;
+                    transform: translate(0,-25%);
                     border-radius: 20px;
                     overflow: hidden; 
-                    object-fit: contain;
-                    transition: 0.5s;
+                    object-fit: cover;
+                    transition: 1s;
                 }
             }
             
@@ -286,7 +285,7 @@ h1{
                 min-width: 400px;
                 > a{
                     > img{
-                        filter: opacity(40%) brightness(0.5)  grayscale(50%);
+                        filter: opacity(40%) brightness(0.2)  grayscale(50%);
                         z-index: 0;
                         transform: translate(0);
                     }
@@ -321,6 +320,65 @@ h1{
             &:last-child{
                 margin-right: 10%;
             }
+        }
+    }
+}
+.resumo{
+    background: rgb(39,39,40);
+    background: radial-gradient(circle, rgba(40,40,40,1) 0%, rgb(20, 20, 20) 100%);
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    display:grid;
+    grid-template-areas: "imagem texto" "capa tec";
+    position: relative;
+    div{
+        color: white;
+        order:1;
+        display: grid;
+        grid-area:texto;
+        h1{
+            font-size: 65px;
+            margin-bottom: 40px;
+            text-decoration: underline;
+        }
+        p{
+            font-size: 40px;
+            max-width:40vw ;
+            text-align: justify;
+        }
+    }
+    img{
+        filter: grayscale(30%);
+        order: 0;
+        height:60vh;
+        animation: slidein2 ease-in-out;
+        animation-duration: 2s;
+        overflow: hidden;
+        grid-area:imagem;
+        border-radius: 5px;
+    }
+    ul{
+        order:2;
+        grid-area: tec; 
+        display: flex;
+        justify-content: center;
+        background-color:rgba(40,40,40,1) ;
+        height: 80%;
+        border-radius: 50px;
+        padding: 10px;
+        li{
+            display: inline-flex;
+            align-items: center;
+            font-size: 32px;
+        }
+    }
+    @keyframes slidein2 {
+        from {
+          transform: translateX(-100%) ;
+        }
+        to {
+          transform: translateX(0);
         }
     }
 }

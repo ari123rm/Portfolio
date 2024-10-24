@@ -1,8 +1,9 @@
 import React from 'react';
-import { FaGithub,FaGitAlt,FaHtml5,FaCss3,FaJs,FaReact,FaNodeJs,FaCuttlefish ,FaJava,FaPuzzlePiece, FaInstagram,FaLinkedin } from "react-icons/fa";
+import { FaGithub,FaGitAlt,FaHtml5,FaCss3,FaJs,FaReact,FaNodeJs,FaJava,FaPuzzlePiece, FaInstagram,FaLinkedin } from "react-icons/fa";
 import { SiTypescript,SiHandlebarsdotjs,SiDart,SiFlutter,SiExpress,SiGmail } from "react-icons/si";
 import { GiBrain,GiTeamIdea } from "react-icons/gi";
 import iconProps from '../interfaces/iconProps';
+import { PiFileCFill } from "react-icons/pi";
 import { IconType } from 'react-icons';
 import Img from './Img';
 
@@ -11,6 +12,7 @@ export default class Icon extends React.Component<iconProps>{
         fa: { [key: string]: IconType },
         si: { [key: string]: IconType },
         gi: { [key: string]: IconType },
+        pi: { [key: string]: IconType },
         img: {[key:string]: Img}
       } = {
         fa: {
@@ -21,7 +23,7 @@ export default class Icon extends React.Component<iconProps>{
           javascript: FaJs,
           react: FaReact,
           nodeJs: FaNodeJs,
-          cuttlefish: FaCuttlefish,
+          
           java: FaJava,
           puzzlePiece: FaPuzzlePiece,
           instagram: FaInstagram,
@@ -39,6 +41,9 @@ export default class Icon extends React.Component<iconProps>{
           brain: GiBrain,
           teamIdea: GiTeamIdea,
         },
+        pi:{
+            c:PiFileCFill,
+        },
         img:{
             lattes: new Img({url: "icons/lattes.png", alt:"Lattes"}),
         }
@@ -53,6 +58,7 @@ export default class Icon extends React.Component<iconProps>{
                 case "fa":
                 case "si":
                 case "gi":
+                case "pi":
                     IconComponent =  this.icones[biblioteca][nome];
                     break;
                 default:

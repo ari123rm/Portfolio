@@ -3,7 +3,7 @@ import './App.css';
 import lang from './components/functions/lang';
 import Home from './pages/Home';
 import Footer from './components/Footer';
-import { BrowserRouter, Routes,  Route ,Link  } from 'react-router-dom';
+import { BrowserRouter, Routes,  Route } from 'react-router-dom';
 import Projetos from './pages/Projetos';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     <div>
       <Routes>
         <Route path = "/" element = {<Home  {...lang(language)["home"]} />} />  
-        <Route path = "/Projetos" element = {<Projetos {...lang(language)["projetos"]}/>}/>
+        <Route path = "/Projetos/*" element = {<Projetos {...lang(language)["projetos"]}/>}/>
       </Routes>
       
     </div>
