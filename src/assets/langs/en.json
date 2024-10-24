@@ -8,7 +8,7 @@
          "titulo":"Hello, I am <br><span>Ariel Rocha de Moraes</span>",
          "subtitulo":"Computer Engineering Student <br> IFCE - Fortaleza Campus",
          "imagem":{
-            "url":"images/logo.png",
+            "url":"images/home/logo.png",
             "alt":"Logo"
          }
       },
@@ -18,7 +18,7 @@
          "titulo":"About Me:",
          "texto":"I am passionate about mathematics and games. Since I was young, I have had an affinity for solving problems with logic and mathematics, and naturally, I became fascinated with computing.",
          "imagem":{
-            "url":"images/medalha.jpeg",
+            "url":"images/home/medalha.jpeg",
             "alt":"Gold Medal OBMEP 2019"  
          }
       },
@@ -27,7 +27,7 @@
          "style":"tecnologia",
          "titulo":"Familiar Technologies",
          "imagem":{
-            "url":"images/tecnologias.gif", 
+            "url":"images/home/tecnologias.gif", 
             "alt":"Image of code"
          },
          "lista":[
@@ -190,7 +190,7 @@
                "texto": "Project Description",
                "href": "/",
                "imagem": {
-                  "url":"images/projetoX.jpg",
+                  "url":"images/home/projetoX.jpg",
                   "alt":"Project X"
                },
                "lista": [
