@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-const CConsole: React.FC = () => {
+import consoleProps from '../interfaces/consoleProps';
+const CConsole: React.FC<consoleProps> = (props) => {
+  console.log(props);
   const [code, setCode] = useState<string>('');
   const [output, setOutput] = useState<string>('');
 

@@ -1,7 +1,4 @@
-import ptBr from "../../assets/langs/pt-br.json";
-import en from "../../assets/langs/en.json";
-
-type item = {
+export type item = {
     key:number;
     tema:string;
     href?:string|null;
@@ -17,7 +14,7 @@ type item = {
     }|null
     lista?:Array<item>|null;
 }
-type tema = {
+export type tema = {
     key:number;
     style:string;
     titulo:string;
@@ -29,17 +26,27 @@ type tema = {
     }|null
     lista?:Array<item>|null
 }
-type Home = {
+export  type Home = {
     content : Array<tema>
 }
-type projetos = {
+export type projetos = {
+    url:string;
     resumo:tema;
+    console?:{
+        url:string;
+        linguagens:Array<string>;
+        inputs?:string;
+    }
 }
 
 type ContentType = {
     home: Home;
     projetos:{
-        projetosC?:projetos|null
+        projects :Array<{
+            tipo:string;
+            url?:string;
+            programas:Array<projetos>
+        }>
     }
     footer:{
         titulo:string;

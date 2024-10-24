@@ -217,9 +217,7 @@
     
     ]
    } ,
-  "projetos":{
-    
-  },
+  "projetos":{"projects":[]},
    "footer":{
       "titulo":"My Contacts",
       "contatos":[

@@ -9,13 +9,13 @@ import Projetos from './pages/Projetos';
 function App() {
 
   const [language,setLang] = useState<"en"|"pt-br">("pt-br");
-  
+
   return (
     <BrowserRouter>
     <div>
       <Routes>
         <Route path = "/" element = {<Home  {...lang(language)["home"]} />} />  
-        <Route path = "/ProjetosC/Sudoku" element = {<Projetos {...lang(language)["projetos"]}/>}/>
+        <Route path = "/Projetos" element = {<Projetos {...lang(language)["projetos"]}/>}/>
       </Routes>
       
     </div>
