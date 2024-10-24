@@ -9,7 +9,7 @@ export default class Footer extends React.Component<ContentType["footer"]>{
     contatos(conteudo:ContentType["footer"]["contatos"]){
         const contatos:Array<Item> = [];
         conteudo.forEach((contato)=>{
-            const icon = new Icon({biblioteca:contato.icon.biblioteca,icone:contato.icon.icone,cor:contato.icon.cor});
+            const icon = contato.icon ? new Icon({biblioteca:contato.icon.biblioteca,icone:contato.icon.icone,cor:contato.icon.cor}):undefined;
             contatos.push(
               new Item({
                 tema:contato.tema,

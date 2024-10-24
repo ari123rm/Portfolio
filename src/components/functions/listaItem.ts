@@ -2,7 +2,7 @@ import itemProps from "../interfaces/itemProps";
 import Item from "../classes/Item";
 import Img from "../classes/Img";
 import Icon from "../classes/Icon";
-export default function listaItem(items:Array<any>|undefined){
+export default function listaItem(items:Array<any>|undefined|null){
     if(!items)return undefined;
     const array:Array<Item> = [];
     

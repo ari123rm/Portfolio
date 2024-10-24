@@ -543,8 +543,20 @@
       
    ]},
    "projetos":{
-      "projetos-em-C":{
-         
+      "projetosC":{
+         "resumo":{  
+            "key":0,
+            "style":"projetos",
+            "titulo":"Projetos em C",
+            "texto":"Desde pequeno fui incentivado a procurar as melhores soluções dos problemas, me rendendo premiações em olimpíadas de conhecimento.",
+            "imagem":{
+               "url":"images/home/medalha.jpeg",
+               "alt":"Medalha de Ouro OBMEP 2019"  
+            }
+         },
+         "console":{
+
+         }
       }
    },
    "footer":{

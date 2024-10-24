@@ -11,10 +11,10 @@ export default class Item extends React.Component<itemProps>{
             <li key = {this.key}>
                 {this.props.href?(
                     <a href={this.props.href} target="_blank" title = {this.props.tema}>
-                        <ItemContent tema =  {this.props.tema} icon= {this.props.icon} lista={this.props.lista} texto = {this.props.texto} imagem={this.props.imagem} />
+                        <ItemContent key = {this.key} tema =  {this.props.tema} icon= {this.props.icon} lista={this.props.lista} texto = {this.props.texto} imagem={this.props.imagem} />
                     </a>     
                 ):( 
-                    <ItemContent tema =  {this.props.tema} icon= {this.props.icon} lista={this.props.lista} texto = {this.props.texto} imagem={this.props.imagem} />
+                    <ItemContent key = {this.key} tema =  {this.props.tema} icon= {this.props.icon} lista={this.props.lista} texto = {this.props.texto} imagem={this.props.imagem} />
                 )}
                
             </li>
