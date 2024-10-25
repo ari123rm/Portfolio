@@ -14,7 +14,7 @@ export default function listaItem(items:Array<item>|null|undefined){
         const imagem = item.imagem? new Img({url:item.imagem.url,alt:item.imagem.alt}):undefined;
         
         const icon = item.icon? new Icon({biblioteca:item.icon.biblioteca,icone:item.icon.icone,cor:item.icon.cor}):undefined;
-        array.push(new Item({tema:item.tema,key:item.key ,texto:item.texto , href:item.href, icon:icon,imagem:imagem,lista:list}))
+        array.push(new Item({tema:item.tema,key:item.key ,texto:item.texto , href:item.href,target:item.target, icon:icon,imagem:imagem,lista:list}))
     })
     return array;
 }

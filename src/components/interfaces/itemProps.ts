@@ -8,5 +8,6 @@ export default interface itemProps{
     icon?:Icon|null;
     imagem?:Img|undefined|null;
     href?:string|null;
+    target?:string|null;
     lista?:Array<Item>|null;
 }

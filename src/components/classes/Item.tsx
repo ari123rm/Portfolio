@@ -10,7 +10,7 @@ export default class Item extends React.Component<itemProps>{
         return(
             <li key = {this.key}>
                 {this.props.href?(
-                    <a href={this.props.href} target="_blank" title = {this.props.tema}>
+                    <a href={this.props.href} target={this.props.target?this.props.target:""} title = {this.props.tema}>
                         <ItemContent key = {this.key} tema =  {this.props.tema} icon= {this.props.icon} lista={this.props.lista} texto = {this.props.texto} imagem={this.props.imagem} />
                     </a>     
                 ):( 

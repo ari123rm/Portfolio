@@ -4,6 +4,7 @@ export type item = {
     key:number;
     tema:string;
     href?:string|null;
+    target?:string|null;
     texto?:string|null;
     icon?:{
         biblioteca:string;

@@ -9,8 +9,25 @@ import projectProps from "../components/interfaces/projectProps";
 import consoleProps from "../components/interfaces/consoleProps";
 import Programa from "../components/classes/Programa";
 
-export default class Projetos extends React.Component<ContentType["projetos"]>{
-    projects = this.props.projects;
+interface projetosProps{
+    projetos:ContentType["projetos"];
+    default:ContentType["home"]["content"][4];
+}
+export default class Projetos extends React.Component<projetosProps>{
+    projects = this.props.projetos.projects;
+    content = this.props.default;
+    buildConteudo() {
+        const imagem =  this.content.imagem?new Img({url: this.content.imagem.url,alt: this.content.imagem.alt}):undefined;
+        return new Temas({
+            style: this.content.style,
+            titulo: this.content.titulo,
+            subtitulo: this.content.subtitulo,
+            texto: this.content.texto,
+            lista:listaItem( this.content.lista),
+            imagem: imagem,
+            key: this.content.key
+        }) ;
+    }
     buildProjetos(){
         const projetos:Array<{tipo:string;url?:string,programas:Array<projectProps>,key:number}> = [];
         
@@ -51,9 +68,11 @@ export default class Projetos extends React.Component<ContentType["projetos"]>{
 
     render(){
         return (
-            
+            <>
+           
             <Routes>
             <>
+                <Route path="/" element =  {this.buildConteudo().render()}/>
                 {
                     this.buildProjetos().map((projeto,index)=>
                     <Route path={projeto.url + "/*"} key = {index} element =
@@ -73,6 +92,7 @@ export default class Projetos extends React.Component<ContentType["projetos"]>{
                 }
             </>
             </Routes>
+            </>
         )
     }
 }

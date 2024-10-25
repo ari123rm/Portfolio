@@ -17,7 +17,7 @@ function App() {
     <div>
       <Routes>
         <Route path = "/" element = {<Home  {...lang(language)["home"]} />} />
-        <Route path = "/Projetos/*" element = {<Projetos {...lang(language)["projetos"]}/>}/>
+        <Route path = "/Projetos/*" element = {<Projetos projetos={lang(language)["projetos"]} default = {lang(language)["home"]["content"][4]} />}/>
       </Routes>
       
     </div>
