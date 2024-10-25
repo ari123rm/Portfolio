@@ -13,10 +13,10 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Navbar/>
+    <Navbar {...lang(language)["navBar"]}/>
     <div>
       <Routes>
-        <Route path = "/" element = {<Home  {...lang(language)["home"]} />} />  
+        <Route path = "/" element = {<Home  {...lang(language)["home"]} />} />
         <Route path = "/Projetos/*" element = {<Projetos {...lang(language)["projetos"]}/>}/>
       </Routes>
       

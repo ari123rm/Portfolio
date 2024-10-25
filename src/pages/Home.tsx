@@ -3,6 +3,7 @@ import Temas from "../components/classes/Temas";
 import Img from "../components/classes/Img";
 import listaItem from "../components/functions/listaItem";
 import ContentType from "../components/types/contentType";
+import { Route, Routes } from "react-router-dom";
 
 
 export default class Home extends React.Component<ContentType["home"]>{

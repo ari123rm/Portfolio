@@ -1,4 +1,31 @@
 {
+   "navBar":{
+      "links":[
+         {
+            "key":0,
+            "title":"Home",
+            "href":"/"
+         },
+         {
+            "key":1,
+            "title":"Projetos",
+            "href":"/Projetos",
+            "style":"projetos",
+            "subtitles":[
+               {
+                  "key":0,
+                  "title":"Sudoku",
+                  "href":"/Projetos/Programas-em-C/sudoku"
+               },
+               {
+                  "key":1,
+                  "title":"Jogo da Velha",
+                  "href":"/Projetos/Programas-em-C/jogo-da-velha"
+               }
+            ]
+         }
+      ]
+   },
    "home":{
       "content" :[
       {

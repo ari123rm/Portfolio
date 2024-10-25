@@ -1,3 +1,5 @@
+import Navbar from "../Navbar";
+
 export type item = {
     key:number;
     tema:string;
@@ -39,7 +41,18 @@ export type projetos = {
     }
 }
 
+export type navBarItem = {
+    key?:number;
+    href:string;
+    title:string;
+    style?:string;
+    subtitles?:Array<navBarItem>;
+}
+
 type ContentType = {
+    navBar:{
+        links:Array<navBarItem>
+    }
     home: Home;
     projetos:{
         projects :Array<{

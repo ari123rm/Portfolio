@@ -51,8 +51,8 @@ export default class Projetos extends React.Component<ContentType["projetos"]>{
 
     render(){
         return (
+            
             <Routes>
-
             <>
                 {
                     this.buildProjetos().map((projeto,index)=>
