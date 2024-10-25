@@ -6,8 +6,6 @@ export default class Navbar extends React.Component<ContentType["navBar"]>{
     
     selecionado(href:string){
         const url = window.location.href.split("/").filter((element,index)=>index >= 3);
-        console.log( "/" + url.join("/"))
-        console.log(href)
         return "/" + url.join("/") == href ? style.selecionado: "";
     }
     
