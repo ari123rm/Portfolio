@@ -1,0 +1,499 @@
+{
+    "navBar": {
+      "links": [
+        {
+          "key": 0,
+          "title": "Accueil",
+          "href": "/"
+        },
+        {
+          "key": 1,
+          "title": "Projets",
+          "href": "/Projetos",
+          "style": "projetos",
+          "subtitles": [
+            {
+              "key": 0,
+              "title": "Sudoku",
+              "href": "/Projetos/Programas-em-C/sudoku"
+            },
+            {
+              "key": 1,
+              "title": "Tic-Tac-Toe",
+              "href": "/Projetos/Programas-em-C/jogo-da-velha"
+            }
+          ]
+        }
+      ],
+      "seletorLang": {
+        "label": "Langue",
+        "langs": [
+          {
+            "key": 0,
+            "nome": "Português",
+            "bandeira": {
+              "url": "icons/pt-br.png",
+              "alt": "Drapeau brésilien"
+            },
+            "value": "pt-br"
+          },
+          {
+            "key": 1,
+            "nome": "English",
+            "bandeira": {
+              "url": "icons/en.png",
+              "alt": "Drapeau des États-Unis"
+            },
+            "value": "en"
+          },
+          {
+             "key":2,
+             "nome":"Français",
+             "bandeira":{
+                "url":"icons/fr.png",
+                "alt":"Drapeau français"
+             },
+             "value":"fr"
+          }
+        ]
+      }
+    },
+    "home": {
+      "content": [
+        {
+          "key": 0,
+          "style": "capa",
+          "titulo": "Bonjour, je suis <br><span>Ariel Rocha de Moraes</span>",
+          "subtitulo": "Étudiant en ingénierie informatique <br> IFCE - Campus Fortaleza",
+          "imagem": {
+            "url": "images/home/logo.png",
+            "alt": "Logo"
+          }
+        },
+        {
+          "key": 1,
+          "style": "sobreMim",
+          "titulo": "À propos de moi:",
+          "texto": "Je suis passionné par les mathématiques et les jeux. Dès mon plus jeune âge, j'ai montré une affinité pour la résolution de problèmes avec logique et mathématiques, et naturellement, je suis tombé amoureux de l'informatique.",
+          "imagem": {
+            "url": "images/home/medalha.jpeg",
+            "alt": "Médaille d'or OBMEP 2019"
+          }
+        },
+        {
+          "key": 2,
+          "style": "tecnologia",
+          "titulo": "Technologies Connues",
+          "imagem": {
+            "url": "images/home/tecnologias.gif",
+            "alt": "Image de code"
+          },
+          "lista": [
+            {
+              "key": 0,
+              "tema": "Git",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "gitAlt"
+              },
+              "imagem": null,
+              "texto": null,
+              "lista": null,
+              "href": null
+            },
+            {
+              "key": 1,
+              "tema": "Github",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "github"
+              },
+              "imagem": null,
+              "texto": null,
+              "lista": null,
+              "href": null
+            },
+            {
+              "key": 2,
+              "tema": "HTML",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "html5"
+              },
+              "imagem": null,
+              "texto": null,
+              "lista": null,
+              "href": null
+            },
+            {
+              "key": 3,
+              "tema": "CSS",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "css3"
+              },
+              "imagem": null,
+              "texto": null,
+              "lista": null,
+              "href": null
+            },
+            {
+              "key": 4,
+              "tema": "JavaScript",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "javascript"
+              },
+              "imagem": null,
+              "texto": null,
+              "lista": null,
+              "href": null
+            },
+            {
+              "key": 5,
+              "tema": "React",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "react"
+              },
+              "imagem": null,
+              "texto": null,
+              "lista": null,
+              "href": null
+            },
+            {
+              "key": 6,
+              "tema": "TypeScript",
+              "icon": {
+                "biblioteca": "si",
+                "icone": "typescript"
+              },
+              "imagem": null,
+              "texto": null,
+              "lista": null,
+              "href": null
+            },
+            {
+              "key": 7,
+              "tema": "Node.js",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "nodeJs"
+              },
+              "imagem": null,
+              "texto": null,
+              "lista": null,
+              "href": null
+            },
+            {
+              "key": 8,
+              "tema": "Express",
+              "icon": {
+                "biblioteca": "si",
+                "icone": "express"
+              },
+              "imagem": null,
+              "texto": null,
+              "lista": null,
+              "href": null
+            },
+            {
+              "key": 9,
+              "tema": "HandleBars",
+              "icon": {
+                "biblioteca": "si",
+                "icone": "handlebars"
+              },
+              "imagem": null,
+              "texto": null,
+              "lista": null,
+              "href": null
+            },
+            {
+              "key": 10,
+              "tema": "C",
+              "icon": {
+                "biblioteca": "pi",
+                "icone": "c"
+              },
+              "imagem": null,
+              "texto": null,
+              "lista": null,
+              "href": null
+            },
+            {
+              "key": 11,
+              "tema": "JAVA",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "java"
+              },
+              "imagem": null,
+              "texto": null,
+              "lista": null,
+              "href": null
+            },
+            {
+              "key": 12,
+              "tema": "Dart",
+              "icon": {
+                "biblioteca": "si",
+                "icone": "dart"
+              },
+              "imagem": null,
+              "texto": null,
+              "lista": null,
+              "href": null
+            },
+            {
+              "key": 13,
+              "tema": "Flutter",
+              "icon": {
+                "biblioteca": "si",
+                "icone": "flutter"
+              },
+              "imagem": null,
+              "texto": null,
+              "lista": null,
+              "href": null
+            }
+          ]
+        },
+        {
+          "key": 3,
+          "style": "habilidades",
+          "titulo": "Compétences interpersonnelles",
+          "lista": [
+            {
+              "key": 0,
+              "tema": "Créativité",
+              "icon": {
+                "biblioteca": "gi",
+                "icone": "brain"
+              },
+              "imagem": null,
+              "texto": "J'aime explorer de nouvelles approches et penser de manière originale pour surmonter les défis efficacement.",
+              "lista": null,
+              "href": null
+            },
+            {
+              "key": 1,
+              "tema": "Résolution de problèmes",
+              "icon": {
+                "biblioteca": "fa",
+                "icone": "puzzlePiece"
+              },
+              "imagem": null,
+              "texto": "Depuis mon jeune âge, j'ai été encouragé à trouver les meilleures solutions aux problèmes, remportant des prix dans les olympiades de la connaissance.",
+              "lista": null,
+              "href": null
+            },
+            {
+              "key": 2,
+              "tema": "Travail d'équipe",
+              "icon": {
+                "biblioteca": "gi",
+                "icone": "teamIdea"
+              },
+              "imagem": null,
+              "texto": "Je suis collaboratif et cherche toujours à contribuer au succès de l'équipe. Ma flexibilité et mon orientation vers les résultats collectifs font de moi un partenaire précieux dans tout groupe.",
+              "lista": null,
+              "href": null
+            }
+          ]
+        },
+        {
+          "key": 4,
+          "style": "projetos",
+          "titulo": "Mes Projets",
+          "lista": [
+            {
+              "key": 0,
+              "tema": "C",
+              "imagem": null,
+              "texto": null,
+              "href": null,
+              "lista": [
+                {
+                  "key": 0,
+                  "tema": "Sudoku",
+                  "href": "/Projetos/Programas-em-C/sudoku"
+                },
+                {
+                  "key": 1,
+                  "tema": "Jeu de Morpion",
+                  "href": "/Projetos/Programas-em-C/jogo-da-velha"
+                }
+              ]
+            },
+            {
+              "key": 1,
+              "tema": "JavaScript",
+              "imagem": null,
+              "texto": null,
+              "href": null,
+              "lista": [
+                {
+                  "key": 0,
+                  "tema": "Défis",
+                  "href": "/Projetos/Javascript/desafios"
+                }
+              ]
+            },
+            {
+              "key": 2,
+              "tema": "React",
+              "imagem": null,
+              "texto": null,
+              "href": null,
+              "lista": [
+                {
+                  "key": 0,
+                  "tema": "Système de Langues",
+                  "href": "/Projetos/React/sistema-linguas"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": 5,
+          "style": "carteira",
+          "titulo": "Portefeuille",
+          "texto": "Liste de projets organisés par technologie",
+          "lista": [
+            {
+              "key": 0,
+              "tema": "C",
+              "lista": [
+                {
+                  "key": 0,
+                  "tema": "Sudoku",
+                  "href": "/Projetos/Programas-em-C/sudoku"
+                },
+                {
+                  "key": 1,
+                  "tema": "Jeu de Morpion",
+                  "href": "/Projetos/Programas-em-C/jogo-da-velha"
+                }
+              ]
+            },
+            {
+              "key": 1,
+              "tema": "JavaScript",
+              "lista": [
+                {
+                  "key": 0,
+                  "tema": "Défis",
+                  "href": "/Projetos/Javascript/desafios"
+                }
+              ]
+            },
+            {
+              "key": 2,
+              "tema": "React",
+              "lista": [
+                {
+                  "key": 0,
+                  "tema": "Système de Langues",
+                  "href": "/Projetos/React/sistema-linguas"
+                }
+              ]
+            },
+            {
+              "key": 3,
+              "tema": "Technologies",
+              "texto": "Iconographie simplifiée",
+              "iconografia": [
+                {
+                  "key": 0,
+                  "tema": "Git",
+                  "icon": {
+                    "biblioteca": "fa",
+                    "icone": "gitAlt",
+                    "cor": "orange"
+                  }
+                },
+                {
+                  "key": 1,
+                  "tema": "HTML",
+                  "icon": {
+                    "biblioteca": "fa",
+                    "icone": "html5",
+                    "cor": "orange"
+                  }
+                },
+                {
+                  "key": 2,
+                  "tema": "CSS",
+                  "icon": {
+                    "biblioteca": "fa",
+                    "icone": "css3",
+                    "cor": "orange"
+                  }
+                },
+                {
+                  "key": 3,
+                  "tema": "JavaScript",
+                  "icon": {
+                    "biblioteca": "fa",
+                    "icone": "javascript",
+                    "cor": "orange"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "footer":{
+        "titulo":"Mes Contacts",
+        "contatos":[
+           {
+             "key": 0,
+             "tema": "ari123rm",
+             "href": "https://github.com/ari123rm",
+             "target":"_blank",
+             "icon": {
+               "biblioteca": "fa",
+               "icone": "github"
+             }
+           },
+           {
+             "key": 1,
+             "tema": "arielmoraes05@gmail.com",
+             "href": "mailto:arielmoraes05@gmail.com",
+             "target":"_blank",
+             "icon": {
+               "biblioteca": "si",
+               "icone": "gmail",
+               "cor": "red"
+             }
+           },
+           {
+             "key": 2,
+             "tema": "Ariel Rocha de Moraes",
+             "href": "https://www.linkedin.com/in/ariel-rocha-de-moraes-1653132a0/",
+             "target":"_blank",
+             "icon": {
+               "biblioteca": "fa",
+               "icone": "linkedin",
+               "cor": "#0e76a8"
+             }
+           },
+           {
+             "key": 3,
+             "tema": "Lattes",
+             "href": "http://lattes.cnpq.br/7435278675589514",
+             "target":"_blank",
+             "icon": {
+               "biblioteca": "img",
+               "icone": "lattes"
+             }
+           }
+         ]
+         
+     }
+  }
+  

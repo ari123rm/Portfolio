@@ -1,5 +1,3 @@
-import ptBr from "../../assets/langs/pt-br.json"
-import en from "../../assets/langs/en.json"
 import ContentType from "../types/contentType";
 import langsTypes from "../types/langsTypes";
 

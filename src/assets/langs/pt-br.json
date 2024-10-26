@@ -45,6 +45,15 @@
                   "alt":"Bandeira dos Estados Unidos"
                },
                "value":"en"
+            },
+            {
+               "key":2,
+               "nome":"Français",
+               "bandeira":{
+                  "url":"icons/fr.png",
+                  "alt":"Bandeira da França"
+               },
+               "value":"fr"
             }
          ]
       }
