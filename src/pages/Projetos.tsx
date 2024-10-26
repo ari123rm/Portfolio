@@ -1,5 +1,4 @@
 import React from "react";
-import ContentType from "../components/types/contentType";
 import  CConsole from "../components/classes/Cconsole";
 import Temas from "../components/classes/Temas";
 import Img from "../components/classes/Img";
@@ -8,13 +7,27 @@ import { Routes,  Route  } from 'react-router-dom';
 import projectProps from "../components/interfaces/projectProps";
 import consoleProps from "../components/interfaces/consoleProps";
 import Programa from "../components/classes/Programa";
+import projetosProps from "../components/interfaces/projetosProps";
 
-export default class Projetos extends React.Component<ContentType["projetos"]>{
-    projects = this.props.projects;
-    buildProjetos(){
+const Projetos:React.FC<projetosProps> = (props) =>{
+    const projects = props.projetos.projects;
+    const content = props.default;
+    function buildConteudo() {
+        const imagem =  content.imagem?new Img({url: content.imagem.url,alt: content.imagem.alt}):undefined;
+        return new Temas({
+            style: content.style,
+            titulo: content.titulo,
+            subtitulo: content.subtitulo,
+            texto: content.texto,
+            lista:listaItem( content.lista),
+            imagem: imagem,
+            key: content.key
+        }) ;
+    }
+    function buildProjetos(){
         const projetos:Array<{tipo:string;url?:string,programas:Array<projectProps>,key:number}> = [];
         
-        this.projects.map((projeto)=>{
+        projects.map((projeto)=>{
             const programas:Array<projectProps> = [];
             projeto.programas.forEach((element)=>{
                 const resumo = element.resumo;
@@ -49,30 +62,34 @@ export default class Projetos extends React.Component<ContentType["projetos"]>{
         return projetos;
     }
 
-    render(){
-        return (
-            <Routes>
 
-            <>
-                {
-                    this.buildProjetos().map((projeto,index)=>
-                    <Route path={projeto.url + "/*"} key = {index} element =
+    return (
+        <>
+        
+        <Routes>
+        <>
+            <Route path="/" element =  {buildConteudo().render()}/>
+            {
+                buildProjetos().map((projeto,index)=>
+                <Route path={projeto.url + "/*"} key = {index} element =
+                    {
+                        <Routes>
                         {
-                            <Routes>
-                            {
-                                projeto.programas.map((programa,index)=>
+                            projeto.programas.map((programa,index)=>
+                            
+                                <Route path={programa.url} element = {<Programa {...programa} key = {index}/>}/>
                                 
-                                    <Route path={programa.url} element = {<Programa {...programa} key = {index}/>}/>
-                                    
-                                )
-                            }
-                            </Routes>
+                            )
                         }
-                    />
-                    )
-                }
-            </>
-            </Routes>
-        )
-    }
+                        </Routes>
+                    }
+                />
+                )
+            }
+        </>
+        </Routes>
+        </>
+    )
+    
 }
+export default Projetos;

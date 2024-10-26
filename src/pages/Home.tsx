@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import Temas from "../components/classes/Temas";
 import Img from "../components/classes/Img";
 import listaItem from "../components/functions/listaItem";
 import ContentType from "../components/types/contentType";
+import { Context } from "../App";
 
-
-export default class Home extends React.Component<ContentType["home"]>{
-    content = this.props.content;
-    buildConteudo() {
+const Home:React.FC<ContentType["home"]> = (props) =>{
+    const {language} = useContext(Context)
+    const content = props.content;
+    function buildConteudo() {
         const conteudo:Array<Temas> = [];
-        this.content.forEach((tema)=>{
+        content.forEach((tema)=>{
         const imagem = tema.imagem?new Img({url:tema.imagem.url,alt:tema.imagem.alt}):undefined;
             conteudo.push(
             new Temas({
@@ -25,11 +26,12 @@ export default class Home extends React.Component<ContentType["home"]>{
         return conteudo;
     }
     
-    render(){
-        return (
-            <>
-                {this.buildConteudo().map((temas=>temas.render()))}
-            </>
-        )
-    }
+    
+    return (
+        <>
+            {buildConteudo().map((temas=>temas.render()))}
+        </>
+    )
+    
 }
+export default Home;

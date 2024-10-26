@@ -15,7 +15,8 @@ export default class Footer extends React.Component<ContentType["footer"]>{
                 tema:contato.tema,
                 icon:icon,
                 key:contato.key,
-                href:contato.href
+                href:contato.href,
+                target:contato.target
               })
             )
         })

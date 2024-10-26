@@ -1,17 +1,20 @@
+export type imagem = {
+    url:string;
+    alt:string;
+}
+export type icon = {
+    biblioteca:string;
+    icone:string;
+    cor?:string
+}
 export type item = {
     key:number;
     tema:string;
     href?:string|null;
+    target?:string|null;
     texto?:string|null;
-    icon?:{
-        biblioteca:string;
-        icone:string;
-        cor?:string
-    }|null
-    imagem?:{
-        url:string;
-        alt:string;
-    }|null
+    icon?:icon|null
+    imagem?:imagem|null
     lista?:Array<item>|null;
 }
 export type tema = {
@@ -20,10 +23,7 @@ export type tema = {
     titulo:string;
     subtitulo?:string|null;
     texto?:string|null;
-    imagem?:{
-        url:string;
-        alt:string;
-    }|null
+    imagem?:imagem|null
     lista?:Array<item>|null
 }
 export  type Home = {
@@ -39,7 +39,28 @@ export type projetos = {
     }
 }
 
+export type navBarItem = {
+    key?:number;
+    href:string;
+    title:string;
+    style?:string;
+    subtitles?:Array<navBarItem>;
+}
+
+export type lang ={
+    key?:number;
+    nome:string;
+    bandeira:imagem;
+    value:string;
+}
 type ContentType = {
+    navBar:{
+        links:Array<navBarItem>
+        seletorLang:{
+            label:string;
+            langs:Array<lang>
+        }
+    }
     home: Home;
     projetos:{
         projects :Array<{

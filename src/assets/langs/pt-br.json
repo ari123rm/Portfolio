@@ -1,4 +1,64 @@
 {
+   "navBar":{
+      "links":[
+         {
+            "key":0,
+            "title":"Home",
+            "href":"/"
+         },
+         {
+            "key":1,
+            "title":"Projetos",
+            "href":"/Projetos",
+            "style":"projetos",
+            "subtitles":[
+               {
+                  "key":0,
+                  "title":"Sudoku",
+                  "href":"/Projetos/Programas-em-C/sudoku"
+               },
+               {
+                  "key":1,
+                  "title":"Jogo da Velha",
+                  "href":"/Projetos/Programas-em-C/jogo-da-velha"
+               }
+            ]
+         }
+      ],
+      "seletorLang":{
+         "label":"Idioma",
+         "langs":[
+            {
+               "key":0,
+               "nome":"Português",
+               "bandeira":{
+                  "url":"icons/pt-br.png",
+                  "alt":"Bandeira do Brasil"
+               },
+               "value":"pt-br"
+            },
+            {
+               "key":1,
+               "nome":"English",
+               "bandeira":{
+                  "url":"icons/en.png",
+                  "alt":"Bandeira dos Estados Unidos"
+               },
+               "value":"en"
+            },
+            {
+               "key":2,
+               "nome":"Français",
+               "bandeira":{
+                  "url":"icons/fr.png",
+                  "alt":"Bandeira da França"
+               },
+               "value":"fr"
+            }
+         ]
+      }
+      
+   },
    "home":{
       "content" :[
       {
@@ -581,6 +641,7 @@
            "key": 0,
            "tema": "ari123rm",
            "href": "https://github.com/ari123rm",
+           "target":"_blank",
            "icon": {
              "biblioteca": "fa",
              "icone": "github"
@@ -590,6 +651,7 @@
            "key": 1,
            "tema": "arielmoraes05@gmail.com",
            "href": "mailto:arielmoraes05@gmail.com",
+           "target":"_blank",
            "icon": {
              "biblioteca": "si",
              "icone": "gmail",
@@ -600,6 +662,7 @@
            "key": 2,
            "tema": "Ariel Rocha de Moraes",
            "href": "https://www.linkedin.com/in/ariel-rocha-de-moraes-1653132a0/",
+           "target":"_blank",
            "icon": {
              "biblioteca": "fa",
              "icone": "linkedin",
@@ -610,6 +673,7 @@
            "key": 3,
            "tema": "Lattes",
            "href": "http://lattes.cnpq.br/7435278675589514",
+           "target":"_blank",
            "icon": {
              "biblioteca": "img",
              "icone": "lattes"

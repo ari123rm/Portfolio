@@ -1,6 +1,15 @@
+main{
+    padding-top: calc(5vh + 20px);
+}
 .topicos{
     min-height: 80vh;
     width: 100vi;
     display: flex;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    font-size: 65px;
+}
+h2{
+    font-size: 30px;
 }
