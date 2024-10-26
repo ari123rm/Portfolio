@@ -1,5 +1,3 @@
-import Navbar from "../Navbar";
-
 export type item = {
     key:number;
     tema:string;
@@ -50,9 +48,19 @@ export type navBarItem = {
     subtitles?:Array<navBarItem>;
 }
 
+export type lang ={
+    key?:number;
+    nome:string;
+    emoji:string;
+    value:string;
+}
 type ContentType = {
     navBar:{
         links:Array<navBarItem>
+        seletorLang:{
+            label:string;
+            langs:Array<lang>
+        }
     }
     home: Home;
     projetos:{

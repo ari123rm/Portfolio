@@ -7,7 +7,6 @@ export default class Item extends React.Component<itemProps>{
         this.key = newKey;
     }
     render(){
-        console.log(this.props.tema + this.props.target)
         return(
             <li key = {this.key}>
                 {this.props.href?(

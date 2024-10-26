@@ -2,7 +2,24 @@
   "navBar":{
       "links":[
 
-      ]
+      ],
+      "seletorLang":{
+         "label":"Idioma",
+         "langs":[
+          {
+            "key":0,
+            "nome":"Português",
+            "emoji":"&#127463",
+            "value":"pt-br"
+         },
+         {
+            "key":1,
+            "nome":"Ingles",
+            "emoji":"&#127463",
+            "value":"en"
+         }
+         ]
+      }
    },
    "home":{
     "content":[

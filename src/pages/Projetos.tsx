@@ -1,5 +1,4 @@
 import React from "react";
-import ContentType from "../components/types/contentType";
 import  CConsole from "../components/classes/Cconsole";
 import Temas from "../components/classes/Temas";
 import Img from "../components/classes/Img";
@@ -8,30 +7,27 @@ import { Routes,  Route  } from 'react-router-dom';
 import projectProps from "../components/interfaces/projectProps";
 import consoleProps from "../components/interfaces/consoleProps";
 import Programa from "../components/classes/Programa";
+import projetosProps from "../components/interfaces/projetosProps";
 
-interface projetosProps{
-    projetos:ContentType["projetos"];
-    default:ContentType["home"]["content"][4];
-}
-export default class Projetos extends React.Component<projetosProps>{
-    projects = this.props.projetos.projects;
-    content = this.props.default;
-    buildConteudo() {
-        const imagem =  this.content.imagem?new Img({url: this.content.imagem.url,alt: this.content.imagem.alt}):undefined;
+const Projetos:React.FC<projetosProps> = (props) =>{
+    const projects = props.projetos.projects;
+    const content = props.default;
+    function buildConteudo() {
+        const imagem =  content.imagem?new Img({url: content.imagem.url,alt: content.imagem.alt}):undefined;
         return new Temas({
-            style: this.content.style,
-            titulo: this.content.titulo,
-            subtitulo: this.content.subtitulo,
-            texto: this.content.texto,
-            lista:listaItem( this.content.lista),
+            style: content.style,
+            titulo: content.titulo,
+            subtitulo: content.subtitulo,
+            texto: content.texto,
+            lista:listaItem( content.lista),
             imagem: imagem,
-            key: this.content.key
+            key: content.key
         }) ;
     }
-    buildProjetos(){
+    function buildProjetos(){
         const projetos:Array<{tipo:string;url?:string,programas:Array<projectProps>,key:number}> = [];
         
-        this.projects.map((projeto)=>{
+        projects.map((projeto)=>{
             const programas:Array<projectProps> = [];
             projeto.programas.forEach((element)=>{
                 const resumo = element.resumo;
@@ -66,33 +62,34 @@ export default class Projetos extends React.Component<projetosProps>{
         return projetos;
     }
 
-    render(){
-        return (
-            <>
-           
-            <Routes>
-            <>
-                <Route path="/" element =  {this.buildConteudo().render()}/>
-                {
-                    this.buildProjetos().map((projeto,index)=>
-                    <Route path={projeto.url + "/*"} key = {index} element =
+
+    return (
+        <>
+        
+        <Routes>
+        <>
+            <Route path="/" element =  {buildConteudo().render()}/>
+            {
+                buildProjetos().map((projeto,index)=>
+                <Route path={projeto.url + "/*"} key = {index} element =
+                    {
+                        <Routes>
                         {
-                            <Routes>
-                            {
-                                projeto.programas.map((programa,index)=>
+                            projeto.programas.map((programa,index)=>
+                            
+                                <Route path={programa.url} element = {<Programa {...programa} key = {index}/>}/>
                                 
-                                    <Route path={programa.url} element = {<Programa {...programa} key = {index}/>}/>
-                                    
-                                )
-                            }
-                            </Routes>
+                            )
                         }
-                    />
-                    )
-                }
-            </>
-            </Routes>
-            </>
-        )
-    }
+                        </Routes>
+                    }
+                />
+                )
+            }
+        </>
+        </Routes>
+        </>
+    )
+    
 }
+export default Projetos;

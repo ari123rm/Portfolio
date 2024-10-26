@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import style from "./themes/navbar.module.scss"
 import NavItem from "./classes/NavItem";
 import ContentType from "./types/contentType";
-export default class Navbar extends React.Component<ContentType["navBar"]>{
-    
-    selecionado(href:string){
+import langsTypes from "./types/langsTypes";
+import { useLanguage } from "./context/LangContext";
+import { Context } from "../App";
+const Navbar:React.FC<ContentType["navBar"]> = (props)=>{
+    const {setLanguage} = useContext(Context);
+
+    function selecionado(href:string){
         const url = window.location.href.split("/").filter((element,index)=>index >= 3);
         return "/" + url.join("/") == href ? style.selecionado: "";
     }
-    
-    buildLinks(items:ContentType["navBar"]["links"]|undefined){
+    function buildLinks(items:ContentType["navBar"]["links"]|undefined){
         const links:Array<NavItem> = [];
         if(!items) return [];
         
@@ -19,8 +22,8 @@ export default class Navbar extends React.Component<ContentType["navBar"]>{
                 new NavItem({
                     href:element.href,
                     title:element.title,
-                    style: classname + " " + this.selecionado(element.href),
-                    subtitles: this.buildLinks(element.subtitles),
+                    style: classname + " " + selecionado(element.href),
+                    subtitles: buildLinks(element.subtitles),
                     key:element.key
                 })
             )
@@ -28,22 +31,39 @@ export default class Navbar extends React.Component<ContentType["navBar"]>{
         return links;
     }
 
-    render(){
-        return(
-            <header className={style.navbar}>
-                <ul>
-                    {this.props.links?(
-                        
-                        <>
-                            {this.buildLinks(this.props.links).map((element,index)=>element.render())}
-                        </>
-                            
-                        ):(<></>)
-                        
-                    }    
-                    
-                </ul>
-            </header>
-        )
+    const handleChange = (event:React.ChangeEvent<HTMLSelectElement>) => {
+        
+        const selectedLanguage = event.target.value as langsTypes;
+        setLanguage(selectedLanguage);
+        
+        // Aqui você pode definir a lógica para redirecionar ou carregar conteúdos específicos
+        console.log(`Idioma selecionado: ${selectedLanguage}`);
+        // Exemplo de redirecionamento:
+        // window.location.href = `/${selectedLanguage}`;
     }
+    return(
+        <header className={style.navbar}>
+            <ul>
+                {props.links?(
+                    
+                    <>
+                        {buildLinks(props.links).map((element,index)=>element.render())}
+                    </>
+                        
+                    ):(<></>)
+                    
+                }    
+            </ul>
+            <div>
+            <label htmlFor="language">{props.seletorLang.label}</label>
+            <select id="language" onChange={handleChange}>
+                {   props.seletorLang.langs.map(element =>
+                    <option key={element.key} value={element.value}>{element.emoji} {element.nome}</option>
+                )}
+            </select>
+            </div>
+        </header>
+    )
+    
 }
+export default Navbar
