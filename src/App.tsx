@@ -12,11 +12,15 @@ import langsTypes from './components/types/langsTypes';
 export const Context = React.createContext<any>({language:"pt-br",setLanguage:()=>{}});
 function App() {
 
-  const [language,setLanguage] = useState<langsTypes>("pt-br");
+  const [language,setLanguage] = useState<langsTypes>(() =>{
+    // Verifica o localStorage para o idioma salvo
+    const savedLang = localStorage.getItem('language') as langsTypes
+    return savedLang ? savedLang: 'pt-br';
+  });
 
   useEffect(() => {
     lang(language);
-    console.log(language)
+    localStorage.setItem('language', language);
   }, [language]);
 
   
@@ -25,14 +29,14 @@ function App() {
       <BrowserRouter>
       <Context.Provider value= {{language,setLanguage}}>
       <Navbar {...lang(language)["navBar"]}/>
-      <div>
+      <main>
 
         <Routes>  
           <Route path = "/" element = {<Home  {...lang(language)["home"]} />} />
           <Route path = "/Projetos/*" element = {<Projetos projetos={lang(language)["projetos"]} default = {lang(language)["home"]["content"][4]} />}/>
         </Routes>
         
-      </div>
+      </main>
       <Footer {...lang(language)["footer"]}/>
       </Context.Provider>
       </BrowserRouter>

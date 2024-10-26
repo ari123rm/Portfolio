@@ -6,7 +6,7 @@ import langsTypes from "./types/langsTypes";
 import { Context } from "../App";
 import Img from "./classes/Img";
 const Navbar:React.FC<ContentType["navBar"]> = (props)=>{
-    const {setLanguage} = useContext(Context);
+    const {language,setLanguage} = useContext(Context);
 
     function selecionado(href:string){
         const url = window.location.href.split("/").filter((element,index)=>index >= 3);
@@ -54,13 +54,13 @@ const Navbar:React.FC<ContentType["navBar"]> = (props)=>{
                     
                 }    
             </ul>
-            <div>
-            <label htmlFor="language">{props.seletorLang.label}</label>
-            <select id="language" onChange={handleChange}>
-                {   props.seletorLang.langs.map(element =>
-                    <option key={element.key} value={element.value}><span >{new Img({url :element.bandeira.url,alt : element.bandeira.alt}).render()}</span> {element.nome}</option>
-                )}
-            </select>
+            <div className={style.idiomas}>
+                <label htmlFor="language">{language? new Img({url:`icons/${language}.png`,alt:language}).render(): "🌐" } {props.seletorLang.label}</label>
+                <select id="language" onChange={handleChange} defaultValue={language}>
+                    {   props.seletorLang.langs.map(element =>
+                        <option key={element.key} value={element.value} ><div><i></i><p>{element.nome}</p> </div></option>
+                    )}
+                </select>
             </div>
         </header>
     )

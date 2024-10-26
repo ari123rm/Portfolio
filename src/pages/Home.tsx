@@ -25,8 +25,8 @@ const Home:React.FC<ContentType["home"]> = (props) =>{
         }); 
         return conteudo;
     }
-
-        
+    
+    
     return (
         <>
             {buildConteudo().map((temas=>temas.render()))}
