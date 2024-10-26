@@ -39,7 +39,7 @@
             },
             {
                "key":1,
-               "nome":"Ingles",
+               "nome":"English",
                "bandeira":{
                   "url":"icons/en.png",
                   "alt":"Bandeira dos Estados Unidos"

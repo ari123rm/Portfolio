@@ -308,144 +308,373 @@
           "titulo": "Mes Projets",
           "lista": [
             {
-              "key": 0,
-              "tema": "C",
-              "imagem": null,
-              "texto": null,
-              "href": null,
-              "lista": [
-                {
-                  "key": 0,
-                  "tema": "Sudoku",
-                  "href": "/Projetos/Programas-em-C/sudoku"
+                "key": 0,
+                "tema": "Sudoku",
+                "texto": "The sudoku game with 4 difficulty levels and a scoring system for the player's enjoyment.",
+                "href": "/Projetos/Programas-em-C/sudoku",
+                "imagem": {
+                  "url": "images/projects/programasC/sudoku.png",
+                  "alt": "Sudoku Screen"
                 },
-                {
-                  "key": 1,
-                  "tema": "Jeu de Morpion",
-                  "href": "/Projetos/Programas-em-C/jogo-da-velha"
-                }
-              ]
-            },
-            {
-              "key": 1,
-              "tema": "JavaScript",
-              "imagem": null,
-              "texto": null,
-              "href": null,
-              "lista": [
-                {
-                  "key": 0,
-                  "tema": "Défis",
-                  "href": "/Projetos/Javascript/desafios"
-                }
-              ]
-            },
-            {
-              "key": 2,
-              "tema": "React",
-              "imagem": null,
-              "texto": null,
-              "href": null,
-              "lista": [
-                {
-                  "key": 0,
-                  "tema": "Système de Langues",
-                  "href": "/Projetos/React/sistema-linguas"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "key": 5,
-          "style": "carteira",
-          "titulo": "Portefeuille",
-          "texto": "Liste de projets organisés par technologie",
-          "lista": [
-            {
-              "key": 0,
-              "tema": "C",
-              "lista": [
-                {
-                  "key": 0,
-                  "tema": "Sudoku",
-                  "href": "/Projetos/Programas-em-C/sudoku"
-                },
-                {
-                  "key": 1,
-                  "tema": "Jeu de Morpion",
-                  "href": "/Projetos/Programas-em-C/jogo-da-velha"
-                }
-              ]
-            },
-            {
-              "key": 1,
-              "tema": "JavaScript",
-              "lista": [
-                {
-                  "key": 0,
-                  "tema": "Défis",
-                  "href": "/Projetos/Javascript/desafios"
-                }
-              ]
-            },
-            {
-              "key": 2,
-              "tema": "React",
-              "lista": [
-                {
-                  "key": 0,
-                  "tema": "Système de Langues",
-                  "href": "/Projetos/React/sistema-linguas"
-                }
-              ]
-            },
-            {
-              "key": 3,
-              "tema": "Technologies",
-              "texto": "Iconographie simplifiée",
-              "iconografia": [
-                {
-                  "key": 0,
-                  "tema": "Git",
-                  "icon": {
-                    "biblioteca": "fa",
-                    "icone": "gitAlt",
-                    "cor": "orange"
+                "lista": [
+                  {
+                    "key": 0,
+                    "tema": "C",
+                    "icon": {
+                      "biblioteca": "pi",
+                      "icone": "c",
+                      "cor": "teal"
+                    }
                   }
+                ]
+              },
+              {
+                "key": 0,
+                "tema": "Project X",
+                "texto": "Project Description",
+                "href": "/",
+                "imagem": {
+                  "url": "images/home/projetoX.jpg",
+                  "alt": "Project X"
                 },
-                {
-                  "key": 1,
-                  "tema": "HTML",
-                  "icon": {
-                    "biblioteca": "fa",
-                    "icone": "html5",
-                    "cor": "orange"
+                "lista": [
+                  {
+                    "key": 0,
+                    "tema": "Git",
+                    "icon": {
+                      "biblioteca": "fa",
+                      "icone": "gitAlt",
+                      "cor": "orange"
+                    }
+                  },
+                  {
+                    "key": 1,
+                    "tema": "HTML",
+                    "icon": {
+                      "biblioteca": "fa",
+                      "icone": "html5",
+                      "cor": "orange"
+                    }
+                  },
+                  {
+                    "key": 2,
+                    "tema": "CSS",
+                    "icon": {
+                      "biblioteca": "fa",
+                      "icone": "css3",
+                      "cor": "orange"
+                    }
+                  },
+                  {
+                    "key": 3,
+                    "tema": "JavaScript",
+                    "icon": {
+                      "biblioteca": "fa",
+                      "icone": "javascript",
+                      "cor": "orange"
+                    }
                   }
-                },
-                {
-                  "key": 2,
-                  "tema": "CSS",
-                  "icon": {
-                    "biblioteca": "fa",
-                    "icone": "css3",
-                    "cor": "orange"
-                  }
-                },
-                {
-                  "key": 3,
-                  "tema": "JavaScript",
-                  "icon": {
-                    "biblioteca": "fa",
-                    "icone": "javascript",
-                    "cor": "orange"
-                  }
-                }
-              ]
-            }
+                ]
+              },
+              {
+                 "key": 0,
+                 "tema": "Projeto X",
+                 "texto": "Descrição do Projeto",
+                 "href": "/",
+                 "imagem": {
+                    "url":"images/home/projetoX.jpg",
+                    "alt":"Projeto X"
+                 },
+                 "lista": [
+                    {
+                       "key": 0,
+                       "tema": "Git",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "gitAlt"
+                       }
+                    },
+                    {
+                       "key": 1,
+                       "tema": "React",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "react"
+                       }
+                    }
+                    ]
+                 
+              },
+              {
+                 "key": 0,
+                 "tema": "Projeto X",
+                 "texto": "Descrição do Projeto",
+                 "href": "/",
+                 "imagem": {
+                    "url":"images/home/projetoX.jpg",
+                    "alt":"Projeto X"
+                 },
+                 "lista": [
+                    {
+                       "key": 0,
+                       "tema": "Git",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "gitAlt"
+                       }
+                    },
+                    {
+                       "key": 1,
+                       "tema": "React",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "react"
+                       }
+                    }
+                    ]
+                 
+              },
+              {
+                 "key": 0,
+                 "tema": "Projeto X",
+                 "texto": "Descrição do Projeto",
+                 "href": "/",
+                 "imagem": {
+                    "url":"images/home/projetoX.jpg",
+                    "alt":"Projeto X"
+                 },
+                 "lista": [
+                    {
+                       "key": 0,
+                       "tema": "Git",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "gitAlt"
+                       }
+                    },
+                    {
+                       "key": 1,
+                       "tema": "React",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "react"
+                       }
+                    }
+                    ]
+                 
+              },
+              {
+                 "key": 0,
+                 "tema": "Projeto X",
+                 "texto": "Descrição do Projeto",
+                 "href": "/",
+                 "imagem": {
+                    "url":"images/home/projetoX.jpg",
+                    "alt":"Projeto X"
+                 },
+                 "lista": [
+                    {
+                       "key": 0,
+                       "tema": "Git",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "gitAlt"
+                       }
+                    },
+                    {
+                       "key": 1,
+                       "tema": "React",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "react"
+                       }
+                    }
+                    ]
+                 
+              },
+              {
+                 "key": 0,
+                 "tema": "Projeto X",
+                 "texto": "Descrição do Projeto",
+                 "href": "/",
+                 "imagem": {
+                    "url":"images/home/projetoX.jpg",
+                    "alt":"Projeto X"
+                 },
+                 "lista": [
+                    {
+                       "key": 0,
+                       "tema": "Git",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "gitAlt"
+                       }
+                    },
+                    {
+                       "key": 1,
+                       "tema": "React",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "react"
+                       }
+                    }
+                    ]
+                 
+              },
+              {
+                 "key": 0,
+                 "tema": "Projeto X",
+                 "texto": "Descrição do Projeto",
+                 "href": "/",
+                 "imagem": {
+                    "url":"images/home/projetoX.jpg",
+                    "alt":"Projeto X"
+                 },
+                 "lista": [
+                    {
+                       "key": 0,
+                       "tema": "Git",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "gitAlt"
+                       }
+                    },
+                    {
+                       "key": 1,
+                       "tema": "React",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "react"
+                       }
+                    }
+                    ]
+                 
+              },
+              {
+                 "key": 0,
+                 "tema": "Projeto X",
+                 "texto": "Descrição do Projeto",
+                 "href": "/",
+                 "imagem": {
+                    "url":"images/home/projetoX.jpg",
+                    "alt":"Projeto X"
+                 },
+                 "lista": [
+                    {
+                       "key": 0,
+                       "tema": "Git",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "gitAlt"
+                       }
+                    },
+                    {
+                       "key": 1,
+                       "tema": "React",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "react"
+                       }
+                    }
+                    ]
+                 
+              },
+              {
+                 "key": 0,
+                 "tema": "Projeto X",
+                 "texto": "Descrição do Projeto",
+                 "href": "/",
+                 "imagem": {
+                    "url":"images/home/projetoX.jpg",
+                    "alt":"Projeto X"
+                 },
+                 "lista": [
+                    {
+                       "key": 0,
+                       "tema": "Git",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "gitAlt"
+                       }
+                    },
+                    {
+                       "key": 1,
+                       "tema": "React",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "react"
+                       }
+                    }
+                    ]
+                 
+              },
+              {
+                 "key": 0,
+                 "tema": "Projeto X",
+                 "texto": "Descrição do Projeto",
+                 "href": "/",
+                 "imagem": {
+                    "url":"images/home/projetoX.jpg",
+                    "alt":"Projeto X"
+                 },
+                 "lista": [
+                    {
+                       "key": 0,
+                       "tema": "Git",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "gitAlt"
+                       }
+                    },
+                    {
+                       "key": 1,
+                       "tema": "React",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "react"
+                       }
+                    }
+                    ]
+                 
+              },
+              {
+                 "key": 0,
+                 "tema": "Projeto X",
+                 "texto": "Descrição do Projeto",
+                 "href": "/",
+                 "imagem": {
+                    "url":"images/home/projetoX.jpg",
+                    "alt":"Projeto X"
+                 },
+                 "lista": [
+                    {
+                       "key": 0,
+                       "tema": "Git",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "gitAlt"
+                       }
+                    },
+                    {
+                       "key": 1,
+                       "tema": "React",
+                       "icon": {
+                         "biblioteca": "fa",
+                         "icone": "react"
+                       }
+                    }
+                    ]
+                 
+              }
           ]
         }
+       
       ]
+    },
+    "projetos":{
+        "projects":[
+          
+        ]
     },
     "footer":{
         "titulo":"Mes Contacts",
