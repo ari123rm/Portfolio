@@ -3,8 +3,8 @@ import style from "./themes/navbar.module.scss"
 import NavItem from "./classes/NavItem";
 import ContentType from "./types/contentType";
 import langsTypes from "./types/langsTypes";
-import { useLanguage } from "./context/LangContext";
 import { Context } from "../App";
+import Img from "./classes/Img";
 const Navbar:React.FC<ContentType["navBar"]> = (props)=>{
     const {setLanguage} = useContext(Context);
 
@@ -58,7 +58,7 @@ const Navbar:React.FC<ContentType["navBar"]> = (props)=>{
             <label htmlFor="language">{props.seletorLang.label}</label>
             <select id="language" onChange={handleChange}>
                 {   props.seletorLang.langs.map(element =>
-                    <option key={element.key} value={element.value}>{element.emoji} {element.nome}</option>
+                    <option key={element.key} value={element.value}><span >{new Img({url :element.bandeira.url,alt : element.bandeira.alt}).render()}</span> {element.nome}</option>
                 )}
             </select>
             </div>
