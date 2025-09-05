@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub,FaGitAlt,FaHtml5,FaCss3,FaJs,FaReact,FaNodeJs,FaJava,FaPuzzlePiece, FaInstagram,FaLinkedin } from "react-icons/fa";
+import { FaGithub,FaGitAlt,FaHtml5,FaCss3,FaJs,FaReact,FaNodeJs,FaJava,FaPuzzlePiece, FaInstagram,FaLinkedin, FaPython } from "react-icons/fa";
 import { SiTypescript,SiHandlebarsdotjs,SiDart,SiFlutter,SiExpress,SiGmail } from "react-icons/si";
 import { GiBrain,GiTeamIdea } from "react-icons/gi";
 import iconProps from '../interfaces/iconProps';
@@ -28,6 +28,8 @@ export default class Icon extends React.Component<iconProps>{
           puzzlePiece: FaPuzzlePiece,
           instagram: FaInstagram,
           linkedin: FaLinkedin,
+          python: FaPython,
+
         },
         si: {
           typescript: SiTypescript,
